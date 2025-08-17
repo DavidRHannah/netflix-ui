@@ -1,0 +1,18 @@
+[
+  {
+    "name": "English",
+    "abbr": "en"
+  },
+  {
+    "name": "Espa\u00f1ol",
+    "abbr": "es"
+  },
+  {
+    "name": "Fran\u00E7ois",
+    "abbr": "fr"
+  },
+  {
+    "name": "Deutsche",
+    "abbr": "de"
+  }
+]
