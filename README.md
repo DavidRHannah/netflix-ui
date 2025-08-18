@@ -67,4 +67,5 @@ export default tseslint.config([
   },
 ]);
 ```
+
 # netflix-ui

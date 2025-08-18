@@ -2,7 +2,7 @@ import Background from "/landing/background.jpg";
 // import Logo from '/landing/logo-white.png';
 import NavBar from "./components/NavBar/NavBar";
 import CallToAction from "./components/CallToAction/CallToAction";
-import Curve from './components/Curve/Curve';
+import Curve from "./components/Curve/Curve";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             ),
             url(${Background})
           `,
-          height:'max(80vh, 45rem)',
+          height: "max(80vh, 45rem)",
         }}
         className="before: hero-bg-container bg-cover bg-center w-full"
       >

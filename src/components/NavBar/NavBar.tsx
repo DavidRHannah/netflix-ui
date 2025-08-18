@@ -9,7 +9,7 @@ export default function NavBar() {
   const [dropdownActive, setDropdownActive] = useState(false);
 
   const languages = LanguagesJSON;
-  
+
   function handleDropdownClick() {
     setDropdownActive(!dropdownActive);
   }
