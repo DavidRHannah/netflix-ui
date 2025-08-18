@@ -1,9 +1,22 @@
-<svg viewBox="0 0 100 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+<svg 
+  viewBox="0 0 100 30" 
+  preserveAspectRatio="none" 
+  xmlns="http://www.w3.org/2000/svg" 
+  width="100%" 
+  height="auto"
+  stroke-width="3"
+  stroke="url(#myGradient)"  
+  fill="none"
+  >
+  <defs>
+    <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="fuchsia" />
+      <stop offset="50%" stop-color="red" />
+      <stop offset="100%" stop-color="fuchsia" />
+    </linearGradient>
+  </defs>
   <path 
-    d="M 0 15 C 25 5, 75 5, 100 15" 
-    stroke="#df4a6a" 
-    stroke-width="2" 
-    fill="none"
+    d="M 0 15 C 25 5, 75 5, 100 15"
     stroke-linecap="round"
     stroke-linejoin="round"
     vector-effect="non-scaling-stroke"
