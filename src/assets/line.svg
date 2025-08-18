@@ -1,24 +1,26 @@
 <svg 
-  viewBox="0 0 100 30" 
+  viewBox="0 0 100 15" 
   preserveAspectRatio="none" 
   xmlns="http://www.w3.org/2000/svg" 
   width="100%" 
   height="auto"
-  stroke-width="3"
-  stroke="url(#myGradient)"  
   fill="none"
   >
   <defs>
     <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="fuchsia" />
-      <stop offset="50%" stop-color="red" />
-      <stop offset="100%" stop-color="fuchsia" />
+      <stop offset="0%" stop-color="rgba(255, 0, 255, 0.2)" />
+      <stop offset="25%" stop-color="rgba(255,0,191,0.75)" />
+      <stop offset="50%" stop-color="rgba(255, 0, 0, 1.0)" />
+      <stop offset="75%" stop-color="rgba(255,0,191,0.75)" />
+      <stop offset="100%" stop-color="rgba(255, 0, 255, 0.2)" />
     </linearGradient>
   </defs>
   <path 
     d="M 0 15 C 25 5, 75 5, 100 15"
     stroke-linecap="round"
     stroke-linejoin="round"
+    stroke="url(#myGradient)"
+    stroke-width="3"
     vector-effect="non-scaling-stroke"
   />
 </svg>
