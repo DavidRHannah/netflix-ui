@@ -6,7 +6,6 @@ export default function Curve() {
       <Line
         width="100%"
         height="100%"
-        fill="black"
         className="relative"
         preserveAspectRatio="none"
       />
