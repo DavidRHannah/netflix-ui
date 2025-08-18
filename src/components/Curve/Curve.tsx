@@ -6,7 +6,6 @@ export default function Curve() {
       <Line
         width="100%"
         height="100%"
-        fill="radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))"
         className="relative"
         preserveAspectRatio="none"
       />
