@@ -18,7 +18,7 @@ export default function ScrollCarousel<T>({
   itemClassName = "",
   gap = "gap-6",
   scrollAmount = 600,
-  maxWidth = "max-w-5xl"
+  maxWidth = "max-w-5xl",
 }: ScrollCarouselProps<T>) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [showLeftButton, setShowLeftButton] = useState(false);
@@ -103,10 +103,7 @@ export default function ScrollCarousel<T>({
         }}
       >
         {data.map((item, index) => (
-          <div
-            key={index}
-            className={`flex-shrink-0 ${itemClassName}`}
-          >
+          <div key={index} className={`flex-shrink-0 ${itemClassName}`}>
             {renderItem(item, index)}
           </div>
         ))}
