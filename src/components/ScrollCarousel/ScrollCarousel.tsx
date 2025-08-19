@@ -116,7 +116,7 @@ export default function ScrollCarousel<T>({
           rounded-xl 
           h-32 w-9 
           transition-all duration-500 ease-in-out
-          absolute right-0 z-10
+          absolute right-0 z-10 mr-1
           ${
             showRightButton
               ? "opacity-100 translate-x-0 pointer-events-auto"
