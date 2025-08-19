@@ -1,0 +1,84 @@
+{
+  "trendingMovies": [
+    {
+      "rank": 1,
+      "title": "Avatar: The Way of Water",
+      "image": "1.jpg",
+      "genre": "Action/Adventure",
+      "year": 2022,
+      "rating": 7.6
+    },
+    {
+      "rank": 2,
+      "title": "Top Gun: Maverick",
+      "image": "2.jpg",
+      "genre": "Action/Drama",
+      "year": 2022,
+      "rating": 8.3
+    },
+    {
+      "rank": 3,
+      "title": "Black Panther: Wakanda Forever",
+      "image": "3.jpg",
+      "genre": "Action/Adventure",
+      "year": 2022,
+      "rating": 6.7
+    },
+    {
+      "rank": 4,
+      "title": "Jurassic World Dominion",
+      "image": "4.jpg",
+      "genre": "Action/Adventure",
+      "year": 2022,
+      "rating": 5.6
+    },
+    {
+      "rank": 5,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "image": "5.jpg",
+      "genre": "Action/Fantasy",
+      "year": 2022,
+      "rating": 6.9
+    },
+    {
+      "rank": 6,
+      "title": "Minions: The Rise of Gru",
+      "image": "6.jpg",
+      "genre": "Animation/Comedy",
+      "year": 2022,
+      "rating": 6.5
+    },
+    {
+      "rank": 7,
+      "title": "Thor: Love and Thunder",
+      "image": "7.jpg",
+      "genre": "Action/Comedy",
+      "year": 2022,
+      "rating": 6.2
+    },
+    {
+      "rank": 8,
+      "title": "The Batman",
+      "image": "8.jpg",
+      "genre": "Action/Crime",
+      "year": 2022,
+      "rating": 7.8
+    },
+    {
+      "rank": 9,
+      "title": "Lightyear",
+      "image": "9.jpg",
+      "genre": "Animation/Adventure",
+      "year": 2022,
+      "rating": 6.1
+    },
+    {
+      "rank": 10,
+      "title": "Sonic the Hedgehog 2",
+      "image": "10.jpg",
+      "genre": "Action/Comedy",
+      "year": 2022,
+      "rating": 6.5
+    }
+  ]
+}

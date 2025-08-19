@@ -17,8 +17,8 @@ export default function AdBanner() {
             </span>
           </div>
           <div className="banner-right-container">
-            <button className="border border-black bg-gray-700 rounded px-4 py-1.5">
-              <span className="text-white text-bold text-nowrap text-md xl:text-lg ">
+            <button className="border border-black bg-gray-700 rounded px-4 py-1.5 hover:bg-gray-600 duration-300 transition-colors cursor-pointer">
+              <span className="text-white text-bold text-nowrap text-md xl:text-lg">
                 Learn More
               </span>
             </button>
