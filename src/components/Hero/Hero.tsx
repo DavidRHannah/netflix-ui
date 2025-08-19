@@ -16,7 +16,7 @@ export default function Hero() {
         ),
         url(${Background})
       `,
-        minHeight: "min(80vh, 50rem)",
+        minHeight: "min(90vh, 70rem)",
       }}
       className="hero-container flex flex-col bg-cover bg-center pb-32 justify-start text-center relative w-full h-full py-2 px-4 md:px-32 lg:px-64"
     >
