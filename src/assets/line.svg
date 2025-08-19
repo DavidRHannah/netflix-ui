@@ -1,5 +1,5 @@
 <svg 
-  viewBox="0 0 100 15" 
+  viewBox="0 0 100 13" 
   preserveAspectRatio="none" 
   xmlns="http://www.w3.org/2000/svg" 
   width="100%" 
@@ -19,7 +19,7 @@
     </radialGradient>
   </defs>
   <path 
-    d="M 0 15 C 25 5, 75 5, 100 15"
+    d="M 0 13 C 25 6, 75 6, 100 13"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke="url(#myGradient)"
