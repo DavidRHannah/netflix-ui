@@ -44,13 +44,14 @@ export default function TrendingMovies() {
   );
 
   return (
-    <div className="trending-movies-container mt-12 flex flex-col w-full items-center">
-      <div className="trending-container-title">
+    <div className="trending-movies-container mt-12 p-2 relative items-start flex flex-col w-fit">
+      <div>
         <span className="trending-movies-text text-white font-semibold text-2xl md:text-3xl">
           Trending Movies
         </span>
       </div>
-      <div className="mt-6">
+
+      <div className="mt-2">
         <ScrollCarousel
           data={movies}
           renderItem={renderMovieCard}
