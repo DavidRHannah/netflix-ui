@@ -1,3 +1,4 @@
+import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import FooterData from "./footer_data.json";
 
 interface FooterDataI {
@@ -30,6 +31,10 @@ export default function Footer() {
             ))}
           </div>
         ))}
+      </div>
+      <LanguageDropdown />
+      <div className="captcha text-gray-500 text-sm">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className="underline text-blue-500 hover:text-blue-800">Learn more</a>.
       </div>
     </div>
   );
