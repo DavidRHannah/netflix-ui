@@ -1,4 +1,6 @@
 import AdBanner from "./components/AdBanner/AdBanner";
+import CallToActionInput from "./components/CallToAction/CallToActionInput";
+import Faq from "./components/Faq/Faq";
 import Hero from "./components/Hero/Hero";
 import ReasonsToJoin from "./components/ReasonsToJoin/ReasonsToJoin";
 import TrendingMovies from "./components/TrendingMovies/TrendingMovies";
@@ -11,7 +13,9 @@ function App() {
         <AdBanner />
         <TrendingMovies />
         <ReasonsToJoin />
+        <Faq />
       </div>
+      <CallToActionInput />
     </div>
   );
 }
