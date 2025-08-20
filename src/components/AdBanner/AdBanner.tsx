@@ -2,7 +2,7 @@ import Popcorn from "../../assets/popcorn.svg?react";
 
 export default function AdBanner() {
   return (
-    <div className="flex justify-center hover:scale-105 transition-transform duration-300">
+    <div className="flex justify-center hover:scale-105 relative transition-transform duration-300">
       <div className="ad-banner w-min relative flex gap-1 md:gap-4 items-center justify-center">
         <div className="popcorn-container absolute -left-14 -top-10 md:left-0 md:relative md:-top-2">
           <Popcorn className="popcorn scale-80 md:scale-100" />
