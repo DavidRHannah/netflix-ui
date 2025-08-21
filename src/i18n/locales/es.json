@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "signIn": "Iniciar Sesión",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Películas y series ilimitadas y mucho más",
+    "subtitle": "Desde $7.99. Cancela cuando quieras."
+  },
+  "cta": {
+    "readyToWatch": "¿Listo para ver Netflix? Ingresa tu email para crear o reiniciar tu membresía.",
+    "emailPlaceholder": "Dirección de email",
+    "getStarted": "Comenzar"
+  },
+  "adBanner": {
+    "header": "El Netflix que amas por solo $7,99.",
+    "subtext": "Obtenga nuestro plan más asequible con publicidad.",
+    "learnMore": "Más información"
+  },
+  "reasons": {
+    "title": "Más Razones para Unirte",
+    "enjoyTv": {
+      "title": "Disfruta en tu TV",
+      "description": "Ve en Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, reproductores Blu-ray y más."
+    },
+    "download": {
+      "title": "Descarga tus series para ver sin conexión",
+      "description": "Guarda tus favoritos fácilmente y siempre ten algo que ver."
+    },
+    "watchEverywhere": {
+      "title": "Ve en cualquier lugar",
+      "description": "Transmite películas y series ilimitadas en tu teléfono, tablet, laptop y TV."
+    },
+    "kidsProfiles": {
+      "title": "Crea perfiles para niños",
+      "description": "Envía a los niños a aventuras con sus personajes favoritos en un espacio hecho solo para ellos, gratis con tu membresía."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "questions": [
+      {
+        "question": "¿Qué es Netflix?",
+        "answer": "Netflix es un servicio de streaming que ofrece una amplia variedad de series de TV, películas, anime, documentales y más galardonados en miles de dispositivos conectados a internet. Puedes ver tanto como quieras, cuando quieras, todo por un precio mensual bajo. ¡Siempre hay algo nuevo que descubrir y se agregan nuevas series de TV y películas cada semana!"
+      },
+      {
+        "question": "¿Cuánto cuesta Netflix?",
+        "answer": "Ve Netflix en tu smartphone, tablet, Smart TV, laptop o dispositivo de streaming, todo por una tarifa mensual fija. Los planes van desde $6.99 hasta $22.99 al mes. Sin costos adicionales, sin contratos."
+      },
+      {
+        "question": "¿Dónde puedo ver?",
+        "answer": "Ve en cualquier lugar, en cualquier momento. Inicia sesión con tu cuenta de Netflix para ver instantáneamente en la web en netflix.com desde tu computadora personal o en cualquier dispositivo conectado a internet que ofrezca la aplicación de Netflix, incluyendo smart TVs, smartphones, tablets, reproductores de medios de streaming y consolas de juegos. También puedes descargar tus programas favoritos con la aplicación de iOS o Android. Usa las descargas para ver mientras estás en movimiento y sin conexión a internet. Lleva Netflix contigo a cualquier lugar."
+      },
+      {
+        "question": "¿Cómo cancelo?",
+        "answer": "Netflix es flexible. No hay contratos molestos ni compromisos. Puedes cancelar fácilmente tu cuenta en línea en dos clics. No hay tarifas de cancelación: inicia o detén tu cuenta en cualquier momento."
+      },
+      {
+        "question": "¿Qué puedo ver en Netflix?",
+        "answer": "Netflix tiene una extensa biblioteca de largometrajes, documentales, series de TV, anime, originales de Netflix galardonados y más. Ve tanto como quieras, cuando quieras."
+      },
+      {
+        "question": "¿Es Netflix bueno para niños?",
+        "answer": "La experiencia de Netflix para Niños está incluida en tu membresía para dar control a los padres mientras los niños disfrutan de series de TV y películas familiares en su propio espacio. Los perfiles para niños vienen con controles parentales protegidos por PIN que te permiten restringir la clasificación de madurez del contenido que los niños pueden ver y bloquear títulos específicos que no quieres que los niños vean."
+      }
+    ]
+  },
+  "footer": {
+    "contact": "¿Preguntas? Llama al 1-866-952-4456",
+    "recaptcha": "Esta página está protegida por Google reCAPTCHA para asegurar que no eres un bot.",
+    "learnMore": "Más información",
+    "links": [
+      [
+        {
+          "text": "Centro de Ayuda",
+          "href": "#"
+        },
+        {
+          "text": "Cuenta",
+          "href": "#"
+        },
+        {
+          "text": "Contáctanos",
+          "href": "#"
+        },
+        {
+          "text": "Prueba de Velocidad",
+          "href": "#"
+        },
+        {
+          "text": "Avisos Legales",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Centro de Medios",
+          "href": "#"
+        },
+        {
+          "text": "Relaciones con Inversionistas",
+          "href": "#"
+        },
+        {
+          "text": "Empleos",
+          "href": "#"
+        },
+        {
+          "text": "Información Corporativa",
+          "href": "#"
+        },
+        {
+          "text": "Casa Netflix",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Tienda Netflix",
+          "href": "#"
+        },
+        {
+          "text": "Canjear Tarjetas de Regalo",
+          "href": "#"
+        },
+        {
+          "text": "Comprar Tarjetas de Regalo",
+          "href": "#"
+        },
+        {
+          "text": "Formas de Ver",
+          "href": "#"
+        },
+        {
+          "text": "Solo en Netflix",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Términos de Uso",
+          "href": "#"
+        },
+        {
+          "text": "Privacidad",
+          "href": "#"
+        },
+        {
+          "text": "Preferencias de Cookies",
+          "href": "#"
+        },
+        {
+          "text": "No Vender o Compartir Mi Información Personal",
+          "href": "#"
+        },
+        {
+          "text": "Opciones de Anuncios",
+          "href": "#"
+        }
+      ]
+    ]
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "close": "Cerrar"
+  }
+}

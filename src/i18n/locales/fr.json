@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "signIn": "Se connecter",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Films, séries TV et bien plus en illimité",
+    "subtitle": "À partir de 7,99 €. Annulez à tout moment."
+  },
+  "cta": {
+    "readyToWatch": "Prêt à regarder ? Saisissez votre adresse e-mail pour créer ou réactiver votre abonnement.",
+    "emailPlaceholder": "Adresse e-mail",
+    "getStarted": "Commencer"
+  },
+  "adBanner": {
+    "header": "Le Netflix que vous aimez pour seulement 7,99 $.",
+    "subtext": "Obtenez notre forfait le plus abordable, financé par la publicité.",
+    "learnMore": "Plus d'informations"
+  },
+  "reasons": {
+    "title": "D'autres raisons de nous rejoindre",
+    "enjoyTv": {
+      "title": "Regardez sur votre TV",
+      "description": "Regardez sur Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus."
+    },
+    "download": {
+      "title": "Téléchargez vos séries pour les regarder hors ligne",
+      "description": "Enregistrez facilement vos favoris et ayez toujours quelque chose à regarder."
+    },
+    "watchEverywhere": {
+      "title": "Regardez partout",
+      "description": "Diffusez des films et séries TV en illimité sur votre téléphone, tablette, ordinateur portable et TV."
+    },
+    "kidsProfiles": {
+      "title": "Créez des profils pour les enfants",
+      "description": "Envoyez les enfants vivre des aventures avec leurs personnages préférés dans un espace conçu juste pour eux — inclus avec votre abonnement."
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "questions": [
+      {
+        "question": "Qu'est-ce que Netflix ?",
+        "answer": "Netflix est un service de streaming qui propose une grande variété de séries TV, films, animés, documentaires primés et bien plus sur des milliers d'appareils connectés à Internet. Vous pouvez regarder autant que vous voulez, quand vous voulez – le tout pour un petit prix mensuel fixe. Il y a toujours quelque chose de nouveau à découvrir et de nouvelles séries TV et films sont ajoutés chaque semaine !"
+      },
+      {
+        "question": "Combien coûte Netflix ?",
+        "answer": "Regardez Netflix sur votre smartphone, tablette, Smart TV, ordinateur portable ou appareil de streaming, le tout pour un tarif mensuel fixe. Les forfaits vont de 6,99 € à 22,99 € par mois. Pas de frais supplémentaires, pas de contrats."
+      },
+      {
+        "question": "Où puis-je regarder ?",
+        "answer": "Regardez n'importe où, n'importe quand. Connectez-vous avec votre compte Netflix pour regarder instantanément sur le web à netflix.com depuis votre ordinateur personnel ou sur tout appareil connecté à Internet qui propose l'application Netflix, y compris les smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeux. Vous pouvez également télécharger vos émissions préférées avec l'application iOS ou Android. Utilisez les téléchargements pour regarder en déplacement et sans connexion Internet. Emportez Netflix partout avec vous."
+      },
+      {
+        "question": "Comment puis-je annuler ?",
+        "answer": "Netflix est flexible. Il n'y a pas de contrats embêtants ni d'engagements. Vous pouvez facilement annuler votre compte en ligne en deux clics. Il n'y a pas de frais d'annulation – démarrez ou arrêtez votre compte à tout moment."
+      },
+      {
+        "question": "Que puis-je regarder sur Netflix ?",
+        "answer": "Netflix dispose d'une vaste bibliothèque de longs métrages, documentaires, séries TV, animés, productions originales Netflix primées et bien plus. Regardez autant que vous voulez, quand vous voulez."
+      },
+      {
+        "question": "Netflix est-il adapté aux enfants ?",
+        "answer": "L'expérience Netflix Enfants est incluse dans votre abonnement pour donner aux parents le contrôle pendant que les enfants profitent de séries TV et films adaptés aux familles dans leur propre espace. Les profils enfants sont dotés de contrôles parentaux protégés par code PIN qui vous permettent de restreindre la classification par âge du contenu que les enfants peuvent regarder et de bloquer des titres spécifiques que vous ne voulez pas que les enfants voient."
+      }
+    ]
+  },
+  "footer": {
+    "contact": "Des questions ? Appelez le 1-866-952-4456",
+    "recaptcha": "Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot.",
+    "learnMore": "En savoir plus",
+    "links": [
+      [
+        {
+          "text": "Centre d'aide",
+          "href": "#"
+        },
+        {
+          "text": "Compte",
+          "href": "#"
+        },
+        {
+          "text": "Nous contacter",
+          "href": "#"
+        },
+        {
+          "text": "Test de vitesse",
+          "href": "#"
+        },
+        {
+          "text": "Mentions légales",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Centre média",
+          "href": "#"
+        },
+        {
+          "text": "Relations investisseurs",
+          "href": "#"
+        },
+        {
+          "text": "Emplois",
+          "href": "#"
+        },
+        {
+          "text": "Informations sur l'entreprise",
+          "href": "#"
+        },
+        {
+          "text": "Netflix House",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Boutique Netflix",
+          "href": "#"
+        },
+        {
+          "text": "Utiliser une carte cadeau",
+          "href": "#"
+        },
+        {
+          "text": "Acheter des cartes cadeaux",
+          "href": "#"
+        },
+        {
+          "text": "Façons de regarder",
+          "href": "#"
+        },
+        {
+          "text": "Seulement sur Netflix",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Conditions d'utilisation",
+          "href": "#"
+        },
+        {
+          "text": "Confidentialité",
+          "href": "#"
+        },
+        {
+          "text": "Préférences de cookies",
+          "href": "#"
+        },
+        {
+          "text": "Ne pas vendre ou partager mes informations personnelles",
+          "href": "#"
+        },
+        {
+          "text": "Choix publicitaires",
+          "href": "#"
+        }
+      ]
+    ]
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "close": "Fermer"
+  }
+}

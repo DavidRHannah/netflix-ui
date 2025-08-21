@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "signIn": "Anmelden",
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Unbegrenzt Filme, Serien und mehr",
+    "subtitle": "Ab 7,99 €. Jederzeit kündbar."
+  },
+  "cta": {
+    "readyToWatch": "Bereit zum Schauen? Geben Sie Ihre E-Mail-Adresse ein, um Ihre Mitgliedschaft zu erstellen oder zu reaktivieren.",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "getStarted": "Loslegen"
+  },
+  "adBanner": {
+    "header": "Das Netflix, das Sie lieben, für nur 7,99 $.",
+    "subtext": "Holen Sie sich unseren günstigsten, werbefinanzierten Plan.",
+    "learnMore": "Erfahren Sie mehr"
+  },
+  "reasons": {
+    "title": "Weitere Gründe beizutreten",
+    "enjoyTv": {
+      "title": "Auf Ihrem Fernseher genießen",
+      "description": "Schauen Sie auf Smart-TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray-Playern und mehr."
+    },
+    "download": {
+      "title": "Laden Sie Ihre Serien herunter, um sie offline zu schauen",
+      "description": "Speichern Sie Ihre Favoriten ganz einfach und haben Sie immer etwas zum Schauen."
+    },
+    "watchEverywhere": {
+      "title": "Überall schauen",
+      "description": "Streamen Sie unbegrenzt Filme und Serien auf Ihrem Handy, Tablet, Laptop und Fernseher."
+    },
+    "kidsProfiles": {
+      "title": "Profile für Kinder erstellen",
+      "description": "Schicken Sie Kinder auf Abenteuer mit ihren Lieblingsfiguren in einem Bereich, der nur für sie gemacht ist – kostenlos mit Ihrer Mitgliedschaft."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": [
+      {
+        "question": "Was ist Netflix?",
+        "answer": "Netflix ist ein Streaming-Dienst, der eine große Auswahl an preisgekrönten Serien, Filmen, Anime, Dokumentationen und mehr auf Tausenden von internetfähigen Geräten bietet. Sie können so viel schauen, wie Sie möchten, wann immer Sie möchten – alles für einen niedrigen monatlichen Preis. Es gibt immer etwas Neues zu entdecken und jede Woche werden neue Serien und Filme hinzugefügt!"
+      },
+      {
+        "question": "Wie viel kostet Netflix?",
+        "answer": "Schauen Sie Netflix auf Ihrem Smartphone, Tablet, Smart-TV, Laptop oder Streaming-Gerät, alles für eine feste monatliche Gebühr. Die Tarife reichen von 6,99 € bis 22,99 € pro Monat. Keine zusätzlichen Kosten, keine Verträge."
+      },
+      {
+        "question": "Wo kann ich schauen?",
+        "answer": "Schauen Sie überall und jederzeit. Melden Sie sich mit Ihrem Netflix-Konto an, um sofort im Web unter netflix.com von Ihrem PC aus zu schauen oder auf jedem internetfähigen Gerät, das die Netflix-App anbietet, einschließlich Smart-TVs, Smartphones, Tablets, Streaming-Media-Playern und Spielkonsolen. Sie können auch Ihre Lieblingssendungen mit der iOS- oder Android-App herunterladen. Nutzen Sie Downloads, um unterwegs und ohne Internetverbindung zu schauen. Nehmen Sie Netflix überall mit hin."
+      },
+      {
+        "question": "Wie kündige ich?",
+        "answer": "Netflix ist flexibel. Es gibt keine lästigen Verträge und keine Verpflichtungen. Sie können Ihr Konto ganz einfach online mit zwei Klicks kündigen. Es fallen keine Kündigungsgebühren an – starten oder stoppen Sie Ihr Konto jederzeit."
+      },
+      {
+        "question": "Was kann ich auf Netflix schauen?",
+        "answer": "Netflix hat eine umfangreiche Bibliothek mit Spielfilmen, Dokumentationen, Serien, Anime, preisgekrönten Netflix-Originalen und mehr. Schauen Sie so viel Sie möchten, wann immer Sie möchten."
+      },
+      {
+        "question": "Ist Netflix gut für Kinder?",
+        "answer": "Die Netflix-Kindererfahrung ist in Ihrer Mitgliedschaft enthalten, um Eltern Kontrolle zu geben, während Kinder familienfreundliche Serien und Filme in ihrem eigenen Bereich genießen. Kinderprofile verfügen über PIN-geschützte Kindersicherungen, mit denen Sie die Altersfreigabe von Inhalten, die Kinder schauen können, einschränken und bestimmte Titel blockieren können, die Sie nicht möchten, dass Kinder sie sehen."
+      }
+    ]
+  },
+  "footer": {
+    "contact": "Fragen? Rufen Sie an: 0800-000-0000",
+    "recaptcha": "Diese Seite ist durch Google reCAPTCHA geschützt, um sicherzustellen, dass Sie kein Bot sind.",
+    "learnMore": "Mehr erfahren",
+    "links": [
+      [
+        {
+          "text": "Hilfe-Center",
+          "href": "#"
+        },
+        {
+          "text": "Konto",
+          "href": "#"
+        },
+        {
+          "text": "Kontakt",
+          "href": "#"
+        },
+        {
+          "text": "Geschwindigkeitstest",
+          "href": "#"
+        },
+        {
+          "text": "Rechtliche Hinweise",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Presse",
+          "href": "#"
+        },
+        {
+          "text": "Investoren",
+          "href": "#"
+        },
+        {
+          "text": "Jobs",
+          "href": "#"
+        },
+        {
+          "text": "Unternehmensinformationen",
+          "href": "#"
+        },
+        {
+          "text": "Netflix House",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Netflix Shop",
+          "href": "#"
+        },
+        {
+          "text": "Geschenkkarten einlösen",
+          "href": "#"
+        },
+        {
+          "text": "Geschenkkarten kaufen",
+          "href": "#"
+        },
+        {
+          "text": "Möglichkeiten zum Schauen",
+          "href": "#"
+        },
+        {
+          "text": "Nur auf Netflix",
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "text": "Nutzungsbedingungen",
+          "href": "#"
+        },
+        {
+          "text": "Datenschutz",
+          "href": "#"
+        },
+        {
+          "text": "Cookie-Einstellungen",
+          "href": "#"
+        },
+        {
+          "text": "Meine persönlichen Daten nicht verkaufen oder teilen",
+          "href": "#"
+        },
+        {
+          "text": "Anzeigenauswahl",
+          "href": "#"
+        }
+      ]
+    ]
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen",
+    "close": "Schließen"
+  }
+}
