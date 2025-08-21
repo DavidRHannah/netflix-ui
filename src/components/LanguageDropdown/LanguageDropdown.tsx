@@ -1,11 +1,12 @@
 import { useState } from "react";
 import LanguagesJSON from "./languages.json";
 import { Translate, ArrowDropDown } from "@mui/icons-material";
-import type { LanguageI } from "../LanguageDropdown/types";
+import { useLanguage } from "../../contexts/LanguageContext";
+import type { LanguageI } from "./types";
 
 export default function LanguageDropdown() {
-  const [language, setLanguage] = useState("English");
   const [dropdownActive, setDropdownActive] = useState(false);
+  const { currentLanguage, changeLanguage } = useLanguage();
 
   const languages = LanguagesJSON;
 
@@ -13,8 +14,8 @@ export default function LanguageDropdown() {
     setDropdownActive(!dropdownActive);
   }
 
-  function handleLanguageSelect(selectedLanguage: LanguageI) {
-    setLanguage(selectedLanguage.name);
+  async function handleLanguageSelect(selectedLanguage: LanguageI) {
+    await changeLanguage(selectedLanguage);
     setDropdownActive(false);
   }
 
@@ -24,7 +25,8 @@ export default function LanguageDropdown() {
         onClick={handleDropdownClick}
         className="language-dropdown cursor-pointer bg-black/90 font-base border-1 flex justify-center items-center gap-1 border-white px-2 py-1 text-white opacity-70 rounded-sm"
       >
-        <Translate className="!text-base" /> <span>{language}</span>{" "}
+        <Translate className="!text-base" />
+        <span className="hidden sm:block">{currentLanguage.name}</span>
         <ArrowDropDown />
       </button>
       {dropdownActive && (
@@ -35,7 +37,8 @@ export default function LanguageDropdown() {
               onClick={() => handleLanguageSelect(lang)}
               className="hover:bg-white/10 opacity-90 cursor-pointer text-white px-0 pl-2 py-1 w-full text-left"
             >
-              {lang.name}
+              <span className="hidden sm:block">{lang.name}</span>
+              <span className="block sm:hidden first-letter:uppercase">{lang.abbr}</span>
             </button>
           ))}
         </div>
