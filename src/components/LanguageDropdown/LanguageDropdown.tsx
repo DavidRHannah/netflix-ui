@@ -38,7 +38,7 @@ export default function LanguageDropdown() {
               className="hover:bg-white/10 opacity-90 cursor-pointer text-white px-0 pl-2 py-1 w-full text-left"
             >
               <span className="hidden sm:block">{lang.name}</span>
-              <span className="block sm:hidden">{lang.abbr}</span>
+              <span className="block sm:hidden first-letter:uppercase">{lang.abbr}</span>
             </button>
           ))}
         </div>
