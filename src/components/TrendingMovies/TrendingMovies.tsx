@@ -1,5 +1,6 @@
 import trendingData from "./trending_movies.json";
 import ScrollCarousel from "../ScrollCarousel/ScrollCarousel";
+import { useScreenSize } from "../../hooks/useScreenSize";
 
 interface Movie {
   rank: number;
@@ -12,6 +13,8 @@ interface Movie {
 
 export default function TrendingMovies() {
   const movies: Movie[] = trendingData.trendingMovies;
+  const screenWidth = useScreenSize();
+  
 
   const renderMovieCard = (movie: Movie) => (
     <div className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105">
@@ -55,7 +58,7 @@ export default function TrendingMovies() {
         <ScrollCarousel
           data={movies}
           renderItem={renderMovieCard}
-          scrollAmount={600}
+          scrollAmount={screenWidth === 'xs' ? 350 : 600}
           maxWidth={
             "max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl"
           }
