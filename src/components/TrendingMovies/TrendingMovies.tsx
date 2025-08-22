@@ -1,20 +1,50 @@
 import trendingData from "./trending_movies.json";
 import ScrollCarousel from "../ScrollCarousel/ScrollCarousel";
 import { useScreenSize } from "../../hooks/useScreenSize";
+import { useLanguage } from "../../contexts/LanguageContext";
+
+interface Rating {
+  Source: string;
+  Value: string;
+}
 
 interface Movie {
   rank: number;
+  imdbID: string;
   title: string;
-  image: string;
-  genre: string;
-  year: number;
-  rating: number;
+  year: string;
+  rated: string;
+  released: string;
+  runtime: string;
+  genre: string[];
+  director: string[];
+  writer: string[];
+  actors: string[];
+  plot: string;
+  language: string[];
+  country: string[];
+  awards: string;
+  poster: string;
+  localPoster: string;
+  ratings: Rating[];
+  metascore: number;
+  imdbRating: number;
+  imdbVotes: number;
+  type: string;
+  dvd: string;
+  boxOffice: string;
+  production: string;
+  website: string;
+  isMovie: boolean;
+  isSeries: boolean;
+  hasHighRating: boolean;
+  releaseYear: number;
 }
 
 export default function TrendingMovies() {
   const movies: Movie[] = trendingData.trendingMovies;
   const screenWidth = useScreenSize();
-  
+  const { t } = useLanguage();
 
   const renderMovieCard = (movie: Movie) => (
     <div className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105">
@@ -23,7 +53,7 @@ export default function TrendingMovies() {
       </div>
       <div className="relative overflow-hidden rounded-lg">
         <img
-          src={`/trending/${movie.image}`}
+          src={`${movie.localPoster}`}
           alt={movie.title}
           className="w-36 md:w-48 h-48 md:h-64 object-contain"
         />
@@ -38,7 +68,7 @@ export default function TrendingMovies() {
             <div className="bottom w-full text-xs md:text-sm text-gray-300 font-medium text-right">
               <p className="">{movie.genre}</p>
               <p className="">{movie.year}</p>
-              <p className="text-yellow-400">★ {movie.rating}</p>
+              <p className="text-yellow-400">★ {movie.imdbRating}</p>
             </div>
           </div>
         </div>
@@ -50,7 +80,7 @@ export default function TrendingMovies() {
     <div className="trending-movies-container mt-12 p-2 relative items-start flex flex-col w-fit">
       <div>
         <span className="trending-movies-text text-white font-semibold text-2xl md:text-3xl">
-          Trending Movies
+          {t('trendingMovies.header')}
         </span>
       </div>
 
