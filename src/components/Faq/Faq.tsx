@@ -1,4 +1,4 @@
-import FAQDropdown from "./FaqDropdown";
+import FaqDropdown from "./FaqDropdown";
 import { useTranslation } from "react-i18next";
 
 interface FaqEntryI {
@@ -9,7 +9,6 @@ interface FaqEntryI {
 export default function Faq() {
   const { t } = useTranslation();
 
-  // Access FAQ data from translations using returnObjects option
   const faqEntries: FaqEntryI[] = t("faq.questions", {
     returnObjects: true,
   }) as FaqEntryI[];
@@ -21,7 +20,7 @@ export default function Faq() {
       </div>
       <div className="faq-container w-full grid grid-cols-1 gap-2 text-white">
         {faqEntries.map((faq, index) => (
-          <FAQDropdown
+          <FaqDropdown
             key={index}
             question={faq.question}
             answer={faq.answer}

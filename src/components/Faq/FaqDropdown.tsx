@@ -2,12 +2,12 @@ import { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
-interface FAQDropdownProps {
+interface FaqDropdownProps {
   question: string;
   answer: string;
 }
 
-export default function FAQDropdown({ question, answer }: FAQDropdownProps) {
+export default function FaqDropdown({ question, answer }: FaqDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {

@@ -1,16 +1,13 @@
 import trendingData from "./trending_movies.json";
 import ScrollCarousel from "../ScrollCarousel/ScrollCarousel";
-
-interface Movie {
-  rank: number;
-  title: string;
-  image: string;
-  genre: string;
-  year: number;
-  rating: number;
-}
+import { useScreenSize } from "../../hooks/useScreenSize";
+import { useLanguage } from "../../contexts/LanguageContext";
+import type { Movie } from './types';
 
 export default function TrendingMovies() {
+  const { t } = useLanguage();
+  const screenWidth = useScreenSize();
+  
   const movies: Movie[] = trendingData.trendingMovies;
 
   const renderMovieCard = (movie: Movie) => (
@@ -20,7 +17,7 @@ export default function TrendingMovies() {
       </div>
       <div className="relative overflow-hidden rounded-lg">
         <img
-          src={`/trending/${movie.image}`}
+          src={`${movie.localPoster}`}
           alt={movie.title}
           className="w-36 md:w-48 h-48 md:h-64 object-contain"
         />
@@ -35,7 +32,7 @@ export default function TrendingMovies() {
             <div className="bottom w-full text-xs md:text-sm text-gray-300 font-medium text-right">
               <p className="">{movie.genre}</p>
               <p className="">{movie.year}</p>
-              <p className="text-yellow-400">★ {movie.rating}</p>
+              <p className="text-yellow-400">★ {movie.imdbRating}</p>
             </div>
           </div>
         </div>
@@ -47,7 +44,7 @@ export default function TrendingMovies() {
     <div className="trending-movies-container mt-12 p-2 relative items-start flex flex-col w-fit">
       <div>
         <span className="trending-movies-text text-white font-semibold text-2xl md:text-3xl">
-          Trending Movies
+          {t('trendingMovies.header')}
         </span>
       </div>
 
@@ -55,7 +52,7 @@ export default function TrendingMovies() {
         <ScrollCarousel
           data={movies}
           renderItem={renderMovieCard}
-          scrollAmount={600}
+          scrollAmount={screenWidth === 'xs' ? 350 : 600}
           maxWidth={
             "max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl"
           }

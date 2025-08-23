@@ -9,7 +9,6 @@ interface FooterLink {
 export default function Footer() {
   const { t } = useTranslation();
 
-  // Get footer links from translations - use direct access to i18next
   const footerLinks = t("footer.links", {
     returnObjects: true,
   }) as FooterLink[][];
@@ -17,7 +16,7 @@ export default function Footer() {
   return (
     <div className="footer-container flex flex-col mt-6 gap-4 w-full max-w-6xl mx-auto px-4">
       <div className="text-gray-300 self-start">{t("footer.contact")}</div>
-      <div className="footer items-start max-w-6xl underline text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+      <div className="footer items-start max-w-6xl text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
         {footerLinks.map((group, groupIndex) => (
           <div
             key={groupIndex}
@@ -27,7 +26,7 @@ export default function Footer() {
               <a
                 key={linkIndex}
                 href={link.href}
-                className="text-sm hover:text-white transition-colors duration-200"
+                className="text-sm underline hover:text-white transition-colors duration-200"
               >
                 {link.text}
               </a>
