@@ -9,7 +9,6 @@ interface FooterLink {
 export default function Footer() {
   const { t } = useTranslation();
 
-  // Get footer links from translations - use direct access to i18next
   const footerLinks = t("footer.links", {
     returnObjects: true,
   }) as FooterLink[][];

@@ -1,5 +1,5 @@
 import { LanguageProvider } from "./contexts/LanguageContext";
-import "./i18n"; // Import i18n configuration
+import "./i18n";
 import AdBanner from "./components/AdBanner/AdBanner";
 import CallToActionInput from "./components/CallToAction/CallToActionInput";
 import Faq from "./components/Faq/Faq";

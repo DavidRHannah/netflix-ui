@@ -1,0 +1,272 @@
+@startuml Netflix UI Project Structure
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+title Netflix UI
+
+' Root Configuration Layer
+package "Project Root" {
+  [index.html] as html #LightBlue
+  [vite.config.ts] as vite #LightGray
+  [package.json] as pkg #LightGray
+  [tsconfig.json] as ts #LightGray
+  [.env] as env #Yellow
+}
+
+' Public Assets Layer
+package "Public Assets" {
+  package "landing" {
+    [background.jpg] #LightGreen
+    [logo.png] #LightGreen
+    [logo-white.png] #LightGreen
+    [watchthis.jpg] #LightGreen
+  }
+  
+  package "movie_data" {
+    [movie_data.json] #Orange
+    package "posters" {
+      [movie_posters] #LightGreen
+    }
+  }
+  
+  package "trending_folder" {
+    [trending_images] #LightGreen
+  }
+  
+  [placeholder-movie.svg] #LightGreen
+}
+
+' Core Application Layer
+package "Source Code" {
+  [main.tsx] as main #Pink
+  [App.tsx] as app #Pink
+  [index.css] as css #LightCyan
+  [vite-env.d.ts] as types #LightGray
+  
+  package "assets" {
+    [netflix.svg] #LightGreen
+    [line.svg] #LightGreen
+    [popcorn.svg] #LightGreen
+    [react.svg] #LightGreen
+  }
+}
+
+' State Management Layer
+package "Contexts & Hooks" {
+  package "contexts" {
+    [LanguageContext.tsx] as langCtx #Wheat
+  }
+  
+  package "hooks" {
+    [useLocalizedContent.ts] as locHook #Wheat
+    [useScreenSize.ts] as screenHook #Wheat
+  }
+}
+
+' Internationalization Layer
+package "Internationalization" {
+  package "i18n" {
+    [index.ts] as i18nIndex #Lavender
+    package "locales" {
+      [en.json] #Lavender
+      [es.json] #Lavender
+      [fr.json] #Lavender
+      [de.json] #Lavender
+    }
+  }
+}
+
+' Component Architecture Layer
+package "Component Architecture" {
+  
+  package "Layout Components" {
+    package "Hero" {
+      [Hero.tsx] as hero #LightSalmon
+    }
+    
+    package "Footer" {
+      [Footer.tsx] as footer #LightSalmon
+    }
+  }
+  
+  package "Navigation Components" {
+    package "NavBar" {
+      [NavBar.tsx] as navbar #LightBlue
+    }
+    
+    package "LanguageDropdown" {
+      [LanguageDropdown.tsx] as langDrop #LightBlue
+      [types.tsx] as langTypes #LightGray
+      [languages.json] as langData #Orange
+    }
+  }
+  
+  package "Interactive Components" {
+    package "CallToAction" {
+      [CallToAction.tsx] as cta #LightYellow
+      [CallToActionInput.tsx] as ctaInput #LightYellow
+    }
+    
+    package "ScrollCarousel" {
+      [ScrollCarousel.tsx] as carousel #LightYellow
+    }
+  }
+  
+  package "Content Components" {
+    package "AdBanner" {
+      [AdBanner.tsx] as adBanner #LightCoral
+    }
+    
+    package "TrendingMovies" {
+      [TrendingMovies.tsx] as trendingMovies #LightCoral
+      [MovieModal.tsx] as modal #LightCoral
+      [types.ts] as movieTypes #LightGray
+      [trending_movies.json] as trendingData #Orange
+    }
+    
+    package "ReasonsToJoin" {
+      [ReasonsToJoin.tsx] as reasons #LightCoral
+      [ReasonToJoin.tsx] as reason #LightCoral
+      [SvgGradient.tsx] as svgGrad #LightCoral
+    }
+    
+    package "Faq" {
+      [Faq.tsx] as faq #LightCoral
+      [FaqDropdown.tsx] as faqDrop #LightCoral
+      [faq_data.json] as faqData #Orange
+    }
+  }
+  
+  package "Utility Components" {
+    package "Curve" {
+      [Curve.tsx] as curve #MistyRose
+    }
+  }
+}
+
+' Main Application Flow
+html --> main : loads
+main --> app : renders
+app --> langCtx : wraps with LanguageProvider
+
+' App Component Structure
+app --> hero : renders
+app --> adBanner : renders
+app --> trendingMovies : renders
+app --> reasons : renders
+app --> faq : renders
+app --> ctaInput : renders (bottom)
+app --> footer : renders
+app --> i18nIndex : imports
+
+' Hero Component Dependencies
+hero --> navbar : contains
+hero --> cta : contains
+hero --> curve : contains
+
+' Navigation System
+navbar --> langDrop : contains
+navbar --> langCtx : uses context
+
+' Language System
+langDrop --> langTypes : uses types
+langDrop --> langData : uses data
+langDrop --> langCtx : uses context
+langCtx --> i18nIndex : uses i18n system
+
+' Internationalization Flow
+i18nIndex --> en.json : loads English
+i18nIndex --> es.json : loads Spanish
+i18nIndex --> fr.json : loads French
+i18nIndex --> de.json : loads German
+
+' Call To Action System
+cta --> ctaInput : contains
+cta --> langCtx : uses context
+ctaInput --> langCtx : uses context
+
+' Movie System
+trendingMovies --> carousel : uses for scrolling
+trendingMovies --> movieTypes : uses types
+trendingMovies --> trendingData : uses data
+trendingMovies --> screenHook : uses for responsive
+trendingMovies --> langCtx : uses context
+trendingMovies --> locHook : uses for localization
+
+' Reasons System
+reasons --> reason : renders multiple instances
+reason --> svgGrad : uses for icon styling
+reasons --> langCtx : uses context
+
+' FAQ System
+faq --> faqDrop : renders multiple instances
+faq --> langCtx : uses context
+
+' Utility Components
+curve --> line.svg : uses SVG asset
+
+' Hook Dependencies
+locHook --> langCtx : uses context
+
+' Configuration Dependencies
+vite --> pkg : references
+ts --> pkg : references
+
+note top of langCtx
+  Central Language Management
+  • Current language state
+  • Language switching logic
+  • Translation function provider
+  • Context for all components
+end note
+
+note top of i18nIndex
+  i18next Configuration
+  • Language detection
+  • Resource loading
+  • Fallback handling
+  • Browser language detection
+end note
+
+note top of carousel
+  Reusable Scroll Component
+  • Generic data handling
+  • Smooth scrolling behavior
+  • Responsive design
+  • Navigation controls
+end note
+
+note top of trendingMovies
+  Movie Showcase
+  • Dynamic data rendering
+  • Localized content display
+  • Responsive layout
+  • Hover interactions
+end note
+
+note top of app
+  Main Application
+  • Component orchestration
+  • Layout structure
+  • Context providers
+  • Global styling
+end note
+
+legend right
+  |Color| Component Type |
+  |<#Pink>| Core App Files |
+  |<#LightBlue>| Navigation |
+  |<#LightYellow>| Interactive |
+  |<#LightCoral>| Content |
+  |<#LightSalmon>| Layout |
+  |<#Wheat>| State Management |
+  |<#Lavender>| Internationalization |
+  |<#Orange>| Data Files |
+  |<#LightGreen>| Assets |
+  |<#LightGray>| Configuration |
+endlegend
+
+@enduml

@@ -2,49 +2,13 @@ import trendingData from "./trending_movies.json";
 import ScrollCarousel from "../ScrollCarousel/ScrollCarousel";
 import { useScreenSize } from "../../hooks/useScreenSize";
 import { useLanguage } from "../../contexts/LanguageContext";
-
-interface Rating {
-  Source: string;
-  Value: string;
-}
-
-interface Movie {
-  rank: number;
-  imdbID: string;
-  title: string;
-  year: string;
-  rated: string;
-  released: string;
-  runtime: string;
-  genre: string[];
-  director: string[];
-  writer: string[];
-  actors: string[];
-  plot: string;
-  language: string[];
-  country: string[];
-  awards: string;
-  poster: string;
-  localPoster: string;
-  ratings: Rating[];
-  metascore: number;
-  imdbRating: number;
-  imdbVotes: number;
-  type: string;
-  dvd: string;
-  boxOffice: string;
-  production: string;
-  website: string;
-  isMovie: boolean;
-  isSeries: boolean;
-  hasHighRating: boolean;
-  releaseYear: number;
-}
+import type { Movie } from './types';
 
 export default function TrendingMovies() {
-  const movies: Movie[] = trendingData.trendingMovies;
-  const screenWidth = useScreenSize();
   const { t } = useLanguage();
+  const screenWidth = useScreenSize();
+  
+  const movies: Movie[] = trendingData.trendingMovies;
 
   const renderMovieCard = (movie: Movie) => (
     <div className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105">
