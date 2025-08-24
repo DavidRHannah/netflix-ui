@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import type { Movie } from '../components/TrendingMovies/types';
+import { useState } from "react";
+import type { Movie } from "../components/TrendingMovies/types";
 
 export const useMovieModal = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);

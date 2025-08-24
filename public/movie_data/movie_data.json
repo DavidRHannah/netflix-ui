@@ -8,28 +8,13 @@
       "rated": "R",
       "released": "14 Oct 1994",
       "runtime": "142 min",
-      "genre": [
-        "Drama"
-      ],
-      "director": [
-        "Frank Darabont"
-      ],
-      "writer": [
-        "Stephen King",
-        "Frank Darabont"
-      ],
-      "actors": [
-        "Tim Robbins",
-        "Morgan Freeman",
-        "Bob Gunton"
-      ],
+      "genre": ["Drama"],
+      "director": ["Frank Darabont"],
+      "writer": ["Stephen King", "Frank Darabont"],
+      "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
       "plot": "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English"],
+      "country": ["United States"],
       "awards": "Nominated for 7 Oscars. 21 wins & 42 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0111161.jpg",
@@ -68,31 +53,13 @@
       "rated": "R",
       "released": "24 Mar 1972",
       "runtime": "175 min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "director": [
-        "Francis Ford Coppola"
-      ],
-      "writer": [
-        "Mario Puzo",
-        "Francis Ford Coppola"
-      ],
-      "actors": [
-        "Marlon Brando",
-        "Al Pacino",
-        "James Caan"
-      ],
+      "genre": ["Crime", "Drama"],
+      "director": ["Francis Ford Coppola"],
+      "writer": ["Mario Puzo", "Francis Ford Coppola"],
+      "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
       "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      "language": [
-        "English",
-        "Italian",
-        "Latin"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English", "Italian", "Latin"],
+      "country": ["United States"],
       "awards": "Won 3 Oscars. 31 wins & 31 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0068646.jpg",
@@ -131,33 +98,13 @@
       "rated": "R",
       "released": "18 Dec 1974",
       "runtime": "202 min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "director": [
-        "Francis Ford Coppola"
-      ],
-      "writer": [
-        "Francis Ford Coppola",
-        "Mario Puzo"
-      ],
-      "actors": [
-        "Al Pacino",
-        "Robert De Niro",
-        "Robert Duvall"
-      ],
+      "genre": ["Crime", "Drama"],
+      "director": ["Francis Ford Coppola"],
+      "writer": ["Francis Ford Coppola", "Mario Puzo"],
+      "actors": ["Al Pacino", "Robert De Niro", "Robert Duvall"],
       "plot": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
-      "language": [
-        "English",
-        "Italian",
-        "Spanish",
-        "Latin",
-        "Sicilian"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English", "Italian", "Spanish", "Latin", "Sicilian"],
+      "country": ["United States"],
       "awards": "Won 6 Oscars. 17 wins & 21 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMDIxMzBlZDktZjMxNy00ZGI4LTgxNDEtYWRlNzRjMjJmOGQ1XkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0071562.jpg",
@@ -196,33 +143,13 @@
       "rated": "PG-13",
       "released": "18 Jul 2008",
       "runtime": "152 min",
-      "genre": [
-        "Action",
-        "Crime",
-        "Drama"
-      ],
-      "director": [
-        "Christopher Nolan"
-      ],
-      "writer": [
-        "Jonathan Nolan",
-        "Christopher Nolan",
-        "David S. Goyer"
-      ],
-      "actors": [
-        "Christian Bale",
-        "Heath Ledger",
-        "Aaron Eckhart"
-      ],
+      "genre": ["Action", "Crime", "Drama"],
+      "director": ["Christopher Nolan"],
+      "writer": ["Jonathan Nolan", "Christopher Nolan", "David S. Goyer"],
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
       "plot": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
-      "language": [
-        "English",
-        "Mandarin"
-      ],
-      "country": [
-        "United States",
-        "United Kingdom"
-      ],
+      "language": ["English", "Mandarin"],
+      "country": ["United States", "United Kingdom"],
       "awards": "Won 2 Oscars. 163 wins & 165 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
       "localPoster": "tt0468569.jpg",
@@ -261,28 +188,13 @@
       "rated": "Approved",
       "released": "10 Apr 1957",
       "runtime": "96 min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "director": [
-        "Sidney Lumet"
-      ],
-      "writer": [
-        "Reginald Rose"
-      ],
-      "actors": [
-        "Henry Fonda",
-        "Lee J. Cobb",
-        "Martin Balsam"
-      ],
+      "genre": ["Crime", "Drama"],
+      "director": ["Sidney Lumet"],
+      "writer": ["Reginald Rose"],
+      "actors": ["Henry Fonda", "Lee J. Cobb", "Martin Balsam"],
       "plot": "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English"],
+      "country": ["United States"],
       "awards": "Nominated for 3 Oscars. 16 wins & 12 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BYjE4NzdmOTYtYjc5Yi00YzBiLWEzNDEtNTgxZGQ2MWVkN2NiXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0050083.jpg",
@@ -321,34 +233,13 @@
       "rated": "R",
       "released": "04 Feb 1994",
       "runtime": "195 min",
-      "genre": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "director": [
-        "Steven Spielberg"
-      ],
-      "writer": [
-        "Thomas Keneally",
-        "Steven Zaillian"
-      ],
-      "actors": [
-        "Liam Neeson",
-        "Ralph Fiennes",
-        "Ben Kingsley"
-      ],
+      "genre": ["Biography", "Drama", "History"],
+      "director": ["Steven Spielberg"],
+      "writer": ["Thomas Keneally", "Steven Zaillian"],
+      "actors": ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
       "plot": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-      "language": [
-        "English",
-        "Hebrew",
-        "German",
-        "Polish",
-        "Latin"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English", "Hebrew", "German", "Polish", "Latin"],
+      "country": ["United States"],
       "awards": "Won 7 Oscars. 91 wins & 49 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0108052.jpg",
@@ -387,35 +278,13 @@
       "rated": "PG-13",
       "released": "17 Dec 2003",
       "runtime": "201 min",
-      "genre": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "director": [
-        "Peter Jackson"
-      ],
-      "writer": [
-        "J.R.R. Tolkien",
-        "Fran Walsh",
-        "Philippa Boyens"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Viggo Mortensen",
-        "Ian McKellen"
-      ],
+      "genre": ["Adventure", "Drama", "Fantasy"],
+      "director": ["Peter Jackson"],
+      "writer": ["J.R.R. Tolkien", "Fran Walsh", "Philippa Boyens"],
+      "actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
       "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      "language": [
-        "English",
-        "Quenya",
-        "Old English",
-        "Sindarin"
-      ],
-      "country": [
-        "New Zealand",
-        "United States"
-      ],
+      "language": ["English", "Quenya", "Old English", "Sindarin"],
+      "country": ["New Zealand", "United States"],
       "awards": "Won 11 Oscars. 215 wins & 124 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0167260.jpg",
@@ -454,31 +323,13 @@
       "rated": "R",
       "released": "14 Oct 1994",
       "runtime": "154 min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "director": [
-        "Quentin Tarantino"
-      ],
-      "writer": [
-        "Quentin Tarantino",
-        "Roger Avary"
-      ],
-      "actors": [
-        "John Travolta",
-        "Uma Thurman",
-        "Samuel L. Jackson"
-      ],
+      "genre": ["Crime", "Drama"],
+      "director": ["Quentin Tarantino"],
+      "writer": ["Quentin Tarantino", "Roger Avary"],
+      "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
       "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-      "language": [
-        "English",
-        "Spanish",
-        "French"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English", "Spanish", "French"],
+      "country": ["United States"],
       "awards": "Won 1 Oscar. 69 wins & 72 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0110912.jpg",
@@ -517,35 +368,13 @@
       "rated": "R",
       "released": "29 Dec 1967",
       "runtime": "178 min",
-      "genre": [
-        "Adventure",
-        "Drama",
-        "Western"
-      ],
-      "director": [
-        "Sergio Leone"
-      ],
-      "writer": [
-        "Luciano Vincenzoni",
-        "Sergio Leone",
-        "Agenore Incrocci"
-      ],
-      "actors": [
-        "Clint Eastwood",
-        "Eli Wallach",
-        "Lee Van Cleef"
-      ],
+      "genre": ["Adventure", "Drama", "Western"],
+      "director": ["Sergio Leone"],
+      "writer": ["Luciano Vincenzoni", "Sergio Leone", "Agenore Incrocci"],
+      "actors": ["Clint Eastwood", "Eli Wallach", "Lee Van Cleef"],
       "plot": "A bounty-hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
-      "language": [
-        "Italian",
-        "English"
-      ],
-      "country": [
-        "Italy",
-        "Spain",
-        "West Germany",
-        "United States"
-      ],
+      "language": ["Italian", "English"],
+      "country": ["Italy", "Spain", "West Germany", "United States"],
       "awards": "2 wins & 5 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMWM5ZjQxM2YtNDlmYi00ZDNhLWI4MWUtN2VkYjBlMTY1ZTkwXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0060196.jpg",
@@ -584,31 +413,13 @@
       "rated": "R",
       "released": "15 Oct 1999",
       "runtime": "139 min",
-      "genre": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "director": [
-        "David Fincher"
-      ],
-      "writer": [
-        "Chuck Palahniuk",
-        "Jim Uhls"
-      ],
-      "actors": [
-        "Brad Pitt",
-        "Edward Norton",
-        "Meat Loaf"
-      ],
+      "genre": ["Crime", "Drama", "Thriller"],
+      "director": ["David Fincher"],
+      "writer": ["Chuck Palahniuk", "Jim Uhls"],
+      "actors": ["Brad Pitt", "Edward Norton", "Meat Loaf"],
       "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States",
-        "Germany"
-      ],
+      "language": ["English"],
+      "country": ["United States", "Germany"],
       "awards": "Nominated for 1 Oscar. 12 wins & 38 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0137523.jpg",
@@ -647,34 +458,13 @@
       "rated": "PG-13",
       "released": "19 Dec 2001",
       "runtime": "178 min",
-      "genre": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "director": [
-        "Peter Jackson"
-      ],
-      "writer": [
-        "J.R.R. Tolkien",
-        "Fran Walsh",
-        "Philippa Boyens"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Ian McKellen",
-        "Orlando Bloom"
-      ],
+      "genre": ["Adventure", "Drama", "Fantasy"],
+      "director": ["Peter Jackson"],
+      "writer": ["J.R.R. Tolkien", "Fran Walsh", "Philippa Boyens"],
+      "actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
       "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      "language": [
-        "English",
-        "Sindarin"
-      ],
-      "country": [
-        "New Zealand",
-        "United States",
-        "United Kingdom"
-      ],
+      "language": ["English", "Sindarin"],
+      "country": ["New Zealand", "United States", "United Kingdom"],
       "awards": "Won 4 Oscars. 125 wins & 126 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0120737.jpg",
@@ -713,29 +503,13 @@
       "rated": "PG-13",
       "released": "06 Jul 1994",
       "runtime": "142 min",
-      "genre": [
-        "Drama",
-        "Romance"
-      ],
-      "director": [
-        "Robert Zemeckis"
-      ],
-      "writer": [
-        "Winston Groom",
-        "Eric Roth"
-      ],
-      "actors": [
-        "Tom Hanks",
-        "Robin Wright",
-        "Gary Sinise"
-      ],
+      "genre": ["Drama", "Romance"],
+      "director": ["Robert Zemeckis"],
+      "writer": ["Winston Groom", "Eric Roth"],
+      "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
       "plot": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English"],
+      "country": ["United States"],
       "awards": "Won 6 Oscars. 51 wins & 74 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0109830.jpg",
@@ -774,31 +548,13 @@
       "rated": "PG",
       "released": "18 Jun 1980",
       "runtime": "124 min",
-      "genre": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "director": [
-        "Irvin Kershner"
-      ],
-      "writer": [
-        "Leigh Brackett",
-        "Lawrence Kasdan",
-        "George Lucas"
-      ],
-      "actors": [
-        "Mark Hamill",
-        "Harrison Ford",
-        "Carrie Fisher"
-      ],
+      "genre": ["Action", "Adventure", "Fantasy"],
+      "director": ["Irvin Kershner"],
+      "writer": ["Leigh Brackett", "Lawrence Kasdan", "George Lucas"],
+      "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
       "plot": "After the Empire overpowers the Rebel Alliance, Luke Skywalker begins training with Jedi Master Yoda, while Darth Vader and bounty hunter Boba Fett pursue his friends across the galaxy.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English"],
+      "country": ["United States"],
       "awards": "Won 1 Oscar. 27 wins & 21 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0080684.jpg",
@@ -837,34 +593,13 @@
       "rated": "PG-13",
       "released": "18 Dec 2002",
       "runtime": "179 min",
-      "genre": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "director": [
-        "Peter Jackson"
-      ],
-      "writer": [
-        "J.R.R. Tolkien",
-        "Fran Walsh",
-        "Philippa Boyens"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Ian McKellen",
-        "Viggo Mortensen"
-      ],
+      "genre": ["Adventure", "Drama", "Fantasy"],
+      "director": ["Peter Jackson"],
+      "writer": ["J.R.R. Tolkien", "Fran Walsh", "Philippa Boyens"],
+      "actors": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
       "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
-      "language": [
-        "English",
-        "Sindarin",
-        "Old English"
-      ],
-      "country": [
-        "New Zealand",
-        "United States"
-      ],
+      "language": ["English", "Sindarin", "Old English"],
+      "country": ["New Zealand", "United States"],
       "awards": "Won 2 Oscars. 132 wins & 138 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0167261.jpg",
@@ -903,29 +638,13 @@
       "rated": "R",
       "released": "19 Nov 1975",
       "runtime": "133 min",
-      "genre": [
-        "Drama"
-      ],
-      "director": [
-        "Milos Forman"
-      ],
-      "writer": [
-        "Lawrence Hauben",
-        "Bo Goldman",
-        "Ken Kesey"
-      ],
-      "actors": [
-        "Jack Nicholson",
-        "Louise Fletcher",
-        "Michael Berryman"
-      ],
+      "genre": ["Drama"],
+      "director": ["Milos Forman"],
+      "writer": ["Lawrence Hauben", "Bo Goldman", "Ken Kesey"],
+      "actors": ["Jack Nicholson", "Louise Fletcher", "Michael Berryman"],
       "plot": "A rebellious convict is sent to a psychiatric hospital for evaluation in 1963 Oregon, and encourages his docile companions to take more control of their lives and defy the tyrannical head nurse.",
-      "language": [
-        "English"
-      ],
-      "country": [
-        "United States"
-      ],
+      "language": ["English"],
+      "country": ["United States"],
       "awards": "Won 5 Oscars. 38 wins & 15 nominations total",
       "poster": "https://m.media-amazon.com/images/M/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_SX300.jpg",
       "localPoster": "tt0073486.jpg",
