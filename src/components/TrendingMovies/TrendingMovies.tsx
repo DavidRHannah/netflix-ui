@@ -2,7 +2,7 @@ import trendingData from "./trending_movies.json";
 import ScrollCarousel from "../ScrollCarousel/ScrollCarousel";
 import { useScreenSize } from "../../hooks/useScreenSize";
 import { useLanguage } from "../../contexts/LanguageContext";
-import type { Movie } from './types';
+import type { Movie } from "./types";
 import { useMovieModal } from "../../hooks/useMovieModal";
 import MovieModal from "./MovieModal";
 
@@ -10,14 +10,14 @@ export default function TrendingMovies() {
   const { t } = useLanguage();
   const screenWidth = useScreenSize();
   const { selectedMovie, isModalOpen, openModal, closeModal } = useMovieModal();
-  
+
   const movies: Movie[] = trendingData.trendingMovies;
 
   const renderMovieCard = (movie: Movie) => (
-    <div 
-      onClick={() => openModal(movie)} 
+    <div
+      onClick={() => openModal(movie)}
       className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105"
-    >    
+    >
       <div className="absolute -bottom-1 -left-1 text-white text-6xl drop-shadow-[0_3px_2px_rgba(255,0,0,1)] z-10 font-extrabold">
         {movie.rank}
       </div>
@@ -51,23 +51,27 @@ export default function TrendingMovies() {
       <div className="trending-movies-container mt-12 p-2 relative items-start flex flex-col w-fit">
         <div>
           <span className="trending-movies-text text-white font-semibold text-2xl md:text-3xl">
-            {t('trendingMovies.header')}
+            {t("trendingMovies.header")}
           </span>
         </div>
         <div className="mt-2">
           <ScrollCarousel
             data={movies}
             renderItem={renderMovieCard}
-            scrollAmount={screenWidth === 'xs' ? 350 : 600}
+            scrollAmount={screenWidth === "xs" ? 350 : 600}
             maxWidth={
               "max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl"
             }
             gap="gap-4 md:gap-6"
-            />
+          />
         </div>
       </div>
-      
-      <MovieModal movie={selectedMovie} isOpen={isModalOpen} onClose={closeModal}/>
+
+      <MovieModal
+        movie={selectedMovie}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      />
     </>
   );
 }
