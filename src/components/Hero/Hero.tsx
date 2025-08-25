@@ -1,28 +1,14 @@
-import Background from "/landing/background.jpg";
 import NavBar from "../NavBar/NavBar";
 import CallToAction from "../CallToAction/CallToAction";
 import Curve from "../Curve/Curve";
+import BackgroundWrapper from "../BackgroundWrapper/BackgroundWrapper";
 
 export default function Hero() {
   return (
-    <div
-      style={{
-        backgroundImage: `
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.85) 0%,
-          rgba(0, 0, 0, 0.7) 50%,
-          rgba(0, 0, 0, 0.65) 100%
-        ),
-        url(${Background})
-      `,
-        minHeight: "min(90vh, 70rem)",
-      }}
-      className="hero-container flex flex-col bg-cover bg-center pb-32 justify-start text-center relative w-full h-full py-2 px-4 md:px-32 lg:px-64"
-    >
-      <NavBar />
+    <BackgroundWrapper>
+      <NavBar showLanguageDropdown={false} showSignIn={true} />
       <CallToAction />
       <Curve />
-    </div>
+    </BackgroundWrapper>
   );
 }

@@ -19,7 +19,6 @@ interface MovieModalI {
 }
 
 export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
-
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -80,7 +79,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
 
               <div className="movie-info flex-1 text-white">
                 <div className="inline-flex items-center bg-red-600 text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2 sm:mb-3">
-                  #{movie.rank} {t('movieModal.trending')}
+                  #{movie.rank} {t("movieModal.trending")}
                 </div>
 
                 <h2 className="text-lg sm:text-2xl md:text-4xl font-bold mb-1 sm:mb-2 leading-tight">
@@ -97,12 +96,13 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
                       {movie.imdbRating}
                     </span>
                     <span className="text-gray-300 text-xs sm:text-base">
-                      ({movie.imdbVotes.toLocaleString()} {t('movieModal.votes')})
+                      ({movie.imdbVotes.toLocaleString()}{" "}
+                      {t("movieModal.votes")})
                     </span>
                   </div>
                   {movie.metascore > 0 && (
                     <div className="bg-green-600 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded text-xs sm:text-sm font-bold">
-                      {movie.metascore} {t('movieModal.metascore')}
+                      {movie.metascore} {t("movieModal.metascore")}
                     </div>
                   )}
                 </div>
@@ -110,7 +110,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <button className="bg-white text-black px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg flex items-center space-x-1 sm:space-x-2 hover:bg-gray-200 transition-colors font-semibold text-sm sm:text-base">
                     <Play className="w-4 h-4 sm:w-5 sm:h-5" />
-                    <span>{t('movieModal.play')}</span>
+                    <span>{t("movieModal.play")}</span>
                   </button>
                   <button className="bg-zinc-700 hover:bg-zinc-600 text-white px-2 py-1.5 sm:px-4 sm:py-3 rounded-lg transition-colors">
                     <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -130,7 +130,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
                   <Award className="w-4 h-4 sm:w-5 sm:h-5" />
-                  {t('movieModal.overview')}
+                  {t("movieModal.overview")}
                 </h3>
                 <p className="text-gray-300 text-sm sm:text-lg leading-5 sm:leading-relaxed">
                   {movie.plot}
@@ -140,7 +140,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
               {movie.awards && movie.awards !== "N/A" && (
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-white mb-1 sm:mb-2">
-                    {t('movieModal.awards')}
+                    {t("movieModal.awards")}
                   </h3>
                   <p className="text-gray-300 text-sm sm:text-base leading-5">
                     {movie.awards}
@@ -151,7 +151,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
               {movie.ratings && movie.ratings.length > 0 && (
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3">
-                    {t('movieModal.ratings')}
+                    {t("movieModal.ratings")}
                   </h3>
                   <div className="flex flex-wrap gap-2 sm:hidden">
                     {movie.ratings.map((rating, index) => (
@@ -191,7 +191,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
               <div className="sidebar-priority-one flex flex-col gap-2">
                 <div>
                   <h4 className="text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base">
-                    {t('movieModal.director')}
+                    {t("movieModal.director")}
                   </h4>
                   <p className="text-gray-300 text-sm sm:text-base leading-5">
                     {formatDirectors(movie.director)}
@@ -199,7 +199,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base">
-                    {t('movieModal.cast')}
+                    {t("movieModal.cast")}
                   </h4>
                   <p className="text-gray-300 text-sm sm:text-base leading-5">
                     {formatActors(movie.actors)}
@@ -207,7 +207,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base">
-                    {t('movieModal.genres')}
+                    {t("movieModal.genres")}
                   </h4>
                   <div className="flex flex-wrap gap-1 sm:gap-2">
                     {movie.genre.map((genre, index) => (
@@ -225,27 +225,37 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
               <div className="sidebar-priority-two flex flex-col gap-2">
                 <div className="flex items-center gap-2 text-gray-300 text-sm sm:text-base">
                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span>{t('movieModal.released')}: {movie.released}</span>
+                  <span>
+                    {t("movieModal.released")}: {movie.released}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-300 text-sm sm:text-base">
                   <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span>{t('movieModal.runtime')}: {movie.runtime}</span>
+                  <span>
+                    {t("movieModal.runtime")}: {movie.runtime}
+                  </span>
                 </div>
                 {movie.language && movie.language.length > 0 && (
                   <div className="text-gray-300 text-sm sm:text-base leading-5">
-                    <span className="font-medium">{t('movieModal.languages')}: </span>
+                    <span className="font-medium">
+                      {t("movieModal.languages")}:{" "}
+                    </span>
                     {movie.language.join(", ")}
                   </div>
                 )}
                 {movie.country && movie.country.length > 0 && (
                   <div className="text-gray-300 text-sm sm:text-base leading-5">
-                    <span className="font-medium">{t('movieModal.country')}: </span>
+                    <span className="font-medium">
+                      {t("movieModal.country")}:{" "}
+                    </span>
                     {movie.country.join(", ")}
                   </div>
                 )}
                 {movie.boxOffice && movie.boxOffice !== "N/A" && (
                   <div className="text-gray-300 text-sm sm:text-base leading-5">
-                    <span className="font-medium">{t('movieModal.boxOffice')}: </span>
+                    <span className="font-medium">
+                      {t("movieModal.boxOffice")}:{" "}
+                    </span>
                     {movie.boxOffice}
                   </div>
                 )}

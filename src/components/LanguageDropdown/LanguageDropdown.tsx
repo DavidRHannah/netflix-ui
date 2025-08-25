@@ -20,7 +20,7 @@ export default function LanguageDropdown() {
   }
 
   return (
-    <div className="dropdown relative w-fit">
+    <div className="dropdown relative w-fit z-100">
       <button
         onClick={handleDropdownClick}
         className="language-dropdown cursor-pointer bg-black/90 font-base border-1 flex justify-center items-center gap-1 border-white px-2 py-1 text-white opacity-70 rounded-sm"

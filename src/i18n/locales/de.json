@@ -37,6 +37,19 @@
     "country": "Land",
     "boxOffice": "Kinokassen"
   },
+  "signin": {
+    "header": "Anmelden",
+    "emailPlaceholder": "E-Mail-Adresse oder Telefonnummer",
+    "emailError": "Bitte gib eine gültige E-Mail-Adresse oder Telefonnummer ein.",
+    "passwordPlaceholder": "Passwort",
+    "submit": "Anmelden",
+    "or": "ODER",
+    "useCode": "Mit einem Anmeldecode anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "rememberMe": "Angemeldet bleiben",
+    "newToNetflix": "Neu bei Netflix?",
+    "signupCta": "Jetzt registrieren."
+  },
   "reasons": {
     "title": "Weitere Gründe beizutreten",
     "enjoyTv": {
