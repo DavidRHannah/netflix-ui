@@ -20,6 +20,23 @@
   "trendingMovies": {
     "header": "Películas Populares"
   },
+  "movieModal": {
+    "trending": "Tendencias",
+    "votes": "Votos",
+    "metascore": "Metascore",
+    "play": "Reproducir",
+    "overview": "Sinopsis",
+    "awards": "Premios",
+    "ratings": "Calificaciones",
+    "director": "Director",
+    "cast": "Reparto",
+    "genres": "Géneros",
+    "released": "Estreno",
+    "runtime": "Duración",
+    "languages": "Idiomas",
+    "country": "País",
+    "boxOffice": "Taquilla"
+  },
   "reasons": {
     "title": "Más Razones para Unirte",
     "enjoyTv": {
