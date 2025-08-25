@@ -1,0 +1,53 @@
+@startuml User Sign-Up Flow
+[*] --> LandingPage
+
+state LandingPage {
+  LandingPage : 
+}
+LandingPage --> AccountCreated : "Get Started"
+
+state AccountCreated {
+  AccountCreated : 
+}
+AccountCreated --> FinishAccountCreation : "Next"
+
+state FinishAccountCreation {
+  FinishAccountCreation :
+}
+FinishAccountCreation --> CheckInbox: "Send Link"
+
+state CheckInbox {
+  CheckInbox : 
+}
+CheckInbox --> CheckInbox : "Resend Link"
+CheckInbox --> VerifyYourEmail : "Create Password Instead"
+
+state VerifyYourEmail {
+  VerifyYourEmail : 
+}
+VerifyYourEmail --> ChooseYourPlanConfirmation : "Skip"
+
+state ChooseYourPlanConfirmation {
+  ChooseYourPlanConfirmation :
+}
+ChooseYourPlanConfirmation --> ChooseYourPlan : "Next"
+
+state ChooseYourPlan {
+  ChooseYourPlan :
+}
+ChooseYourPlan --> ChooseHowToPay : "Next"
+
+state ChooseHowToPay {
+  ChooseHowToPay : 
+}
+ChooseHowToPay --> SetupYourCreditOrDebitCard : "Credit or Debit Card"
+
+LandingPage <-- AccountCreated
+AccountCreated <-- FinishAccountCreation
+FinishAccountCreation <-- CheckInbox
+CheckInbox <-- VerifyYourEmail
+VerifyYourEmail <-- ChooseYourPlanConfirmation
+ChooseYourPlan <-- ChooseHowToPay
+ChooseHowToPay <-- SetupYourCreditOrDebitCard
+
+@enduml

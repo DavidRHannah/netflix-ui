@@ -1,0 +1,128 @@
+@startuml Sign Up Feature
+!theme plain
+skinparam componentStyle rectangle
+
+title Sign Up Feature - Sprint Planning
+
+package "Feature: Sign Up" #LightYellow {
+  [SignUp.tsx] as modal
+  [useSignUp.ts] as hook
+  [types.ts] as types
+
+  [LandingPage.tsx] as landing
+  [AccountCreated.tsx] as accountCreated
+  [FinishAccountCreation.tsx] as finishAccount
+  [CheckInbox.tsx] as checkInbox
+  [VerifyEmailYourEmail.tsx] as verifyEmail
+  [ChooseYourPlanConfirmation.tsx] as planConfirmation
+  [ChooseYourPlan.tsx] as choosePlan
+  [ChooseHowToPay.tsx] as howToPay
+  [SetupYourCreditOrDebitCard.tsx] as setupCard
+}
+
+package "Modified Components" #LightBlue {
+  [App.tsx] as app
+}
+
+app --> modal : opens
+app --> hook : uses
+modal --> types : imports
+
+landing --> hook
+accountCreated --> hook
+finishAccount --> hook
+checkInbox --> hook
+verifyEmail --> hook
+planConfirmation --> hook
+choosePlan --> hook
+howToPay --> hook
+setupCard --> hook
+
+hook --> types
+
+note bottom of landing
+  **Tasks:**
+  1. Create "Get Started" CTA
+  2. Link to flow start
+  **Estimate:** 2 hours
+end note
+
+note top of accountCreated
+  **Tasks:**
+  1. Display success message
+  2. Add "Next" CTA
+  **Estimate:** 3 hours
+end note
+
+note top of finishAccount
+  **Tasks:**
+  1. Implement "Send Link" button
+  2. Trigger email API via hook
+  **Estimate:** 4 hours
+end note
+
+note top of checkInbox
+  **Tasks:**
+  1. Show resend + alt option
+  2. Wire "Create Password Instead"
+  **Estimate:** 4 hours
+end note
+
+note top of verifyEmail
+  **Tasks:**
+  1. Implement "Skip" + "Next"
+  2. Hook navigation into plan selection
+  **Estimate:** 3 hours
+end note
+
+note top of planConfirmation
+  **Tasks:**
+  1. Display confirmation UI
+  2. Provide continue action
+  **Estimate:** 2 hours
+end note
+
+note top of choosePlan
+  **Tasks:**
+  1. Plan option cards
+  2. "Next" action navigation
+  **Estimate:** 5 hours
+end note
+
+note top of howToPay
+  **Tasks:**
+  1. Payment option buttons
+  2. Wire to payment setup
+  **Estimate:** 4 hours
+end note
+
+note top of setupCard
+  **Tasks:**
+  1. Credit/debit card form
+  2. Validation + submission
+  **Estimate:** 6 hours
+end note
+
+note top of hook
+  **Tasks:**
+  1. Manage state machine
+  2. Call API endpoints
+  3. Handle errors
+  **Estimate:** 8 hours
+end note
+
+note right of types
+  **Tasks:**
+  1. Define SignupFlowState
+  2. Define API request/response types
+  **Estimate:** 2 hours
+end note
+
+note top of app
+  **Changes:**
+  • Add routing for signup screens
+  • Import modal + hook
+  **Estimate:** 3 hours
+end note
+
+@enduml

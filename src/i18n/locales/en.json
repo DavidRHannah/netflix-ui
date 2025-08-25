@@ -20,6 +20,23 @@
   "trendingMovies": {
     "header": "Trending Movies"
   },
+  "movieModal": {
+    "trending": "Trending",
+    "votes": "Votes",
+    "metascore": "Metascore",
+    "play": "Play",
+    "overview": "Overview",
+    "awards": "Awards",
+    "ratings": "Ratings",
+    "director": "Director",
+    "cast": "Cast",
+    "genres": "Genres",
+    "released": "Released",
+    "runtime": "Runtime",
+    "languages": "Languages",
+    "country": "Country",
+    "boxOffice": "Box Office"
+  },
   "reasons": {
     "title": "More Reasons to Join",
     "enjoyTv": {

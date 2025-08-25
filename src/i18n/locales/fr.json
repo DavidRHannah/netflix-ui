@@ -20,6 +20,23 @@
   "trendingMovies": {
     "header": "Films Tendance"
   },
+  "movieModal": {
+    "trending": "Tendances",
+    "votes": "Votes",
+    "metascore": "Metascore",
+    "play": "Lire",
+    "overview": "Synopsis",
+    "awards": "Récompenses",
+    "ratings": "Notes",
+    "director": "Réalisateur",
+    "cast": "Distribution",
+    "genres": "Genres",
+    "released": "Sortie",
+    "runtime": "Durée",
+    "languages": "Langues",
+    "country": "Pays",
+    "boxOffice": "Box-office"
+  },
   "reasons": {
     "title": "D'autres raisons de nous rejoindre",
     "enjoyTv": {

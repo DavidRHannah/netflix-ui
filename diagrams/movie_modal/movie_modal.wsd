@@ -1,0 +1,36 @@
+@startuml MovieModal Feature
+!theme plain
+skinparam componentStyle rectangle
+
+title Movie Modal Feature - Sprint Planning
+
+package "Feature: Movie Modal" #LightYellow {
+  [MovieModal.tsx] as modal
+  [useMovieModal.ts] as hook
+  [types.ts] as types
+}
+
+package "Modified Components" #LightBlue {
+  [TrendingMovies.tsx] as trending
+}
+
+trending --> modal : opens
+trending --> hook : uses
+modal --> types : imports
+
+note left of modal
+  **Tasks:**
+  1. Create responsive layout
+  2. Add keyboard events
+  3. Implement animations
+  4. Mobile optimization
+  **Estimate:** 6 hours
+end note
+
+note right of trending
+  **Changes:**
+  • Add click handler
+  • Import modal components
+  **Estimate:** 2 hours
+end note
+@enduml

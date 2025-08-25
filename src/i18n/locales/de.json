@@ -20,6 +20,23 @@
   "trendingMovies": {
     "header": "Trendfilme"
   },
+  "movieModal": {
+    "trending": "Trending",
+    "votes": "Stimmen",
+    "metascore": "Metascore",
+    "play": "Abspielen",
+    "overview": "Übersicht",
+    "awards": "Auszeichnungen",
+    "ratings": "Bewertungen",
+    "director": "Regisseur",
+    "cast": "Besetzung",
+    "genres": "Genres",
+    "released": "Veröffentlicht",
+    "runtime": "Laufzeit",
+    "languages": "Sprachen",
+    "country": "Land",
+    "boxOffice": "Kinokassen"
+  },
   "reasons": {
     "title": "Weitere Gründe beizutreten",
     "enjoyTv": {
