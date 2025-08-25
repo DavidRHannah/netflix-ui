@@ -37,6 +37,25 @@
     "country": "Country",
     "boxOffice": "Box Office"
   },
+  "signup": {
+    "header": "Sign Up",
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "Email address",
+    "passwordPlaceholder": "Create password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "emailError": "Please enter a valid email address.",
+    "passwordError": "Password must be at least 8 characters long.",
+    "confirmPasswordError": "Passwords do not match.",
+    "nameError": "Please enter a valid first name.",
+    "agreeToTerms": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "submit": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "signinCta": "Sign in now."
+  },
   "signin": {
     "header": "Sign In",
     "emailPlaceholder": "Email or mobile number",

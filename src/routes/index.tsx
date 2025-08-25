@@ -23,7 +23,7 @@ function Index() {
         <CallToActionInput />
       </div>
       <Footer />
-      <div className="empty-space h-36"></div>
+      <div className="empty-space h-30"></div>
     </div>
   );
 }

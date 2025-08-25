@@ -37,6 +37,25 @@
     "country": "País",
     "boxOffice": "Taquilla"
   },
+  "signup": {
+    "header": "Regístrate",
+    "firstNamePlaceholder": "Nombre",
+    "lastNamePlaceholder": "Apellido",
+    "emailPlaceholder": "Correo electrónico",
+    "passwordPlaceholder": "Crea una contraseña",
+    "confirmPasswordPlaceholder": "Confirma la contraseña",
+    "emailError": "Por favor, introduce un correo electrónico válido.",
+    "passwordError": "La contraseña debe tener al menos 8 caracteres.",
+    "confirmPasswordError": "Las contraseñas no coinciden.",
+    "nameError": "Por favor, introduce un nombre válido.",
+    "agreeToTerms": "Acepto los",
+    "termsOfService": "Términos de servicio",
+    "and": "y",
+    "privacyPolicy": "Política de privacidad",
+    "submit": "Crear cuenta",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signinCta": "Inicia sesión ahora."
+  },
   "signin": {
     "header": "Iniciar sesión",
     "emailPlaceholder": "Correo electrónico o número de teléfono",
