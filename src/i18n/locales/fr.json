@@ -37,6 +37,25 @@
     "country": "Pays",
     "boxOffice": "Box-office"
   },
+  "signup": {
+    "header": "Inscription",
+    "firstNamePlaceholder": "Prénom",
+    "lastNamePlaceholder": "Nom",
+    "emailPlaceholder": "Adresse e-mail",
+    "passwordPlaceholder": "Créer un mot de passe",
+    "confirmPasswordPlaceholder": "Confirmer le mot de passe",
+    "emailError": "Veuillez entrer une adresse e-mail valide.",
+    "passwordError": "Le mot de passe doit contenir au moins 8 caractères.",
+    "confirmPasswordError": "Les mots de passe ne correspondent pas.",
+    "nameError": "Veuillez entrer un prénom valide.",
+    "agreeToTerms": "J’accepte les",
+    "termsOfService": "Conditions d’utilisation",
+    "and": "et",
+    "privacyPolicy": "Politique de confidentialité",
+    "submit": "Créer un compte",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "signinCta": "Connectez-vous maintenant."
+  },
   "signin": {
     "header": "Se connecter",
     "emailPlaceholder": "Adresse e-mail ou numéro de téléphone",
