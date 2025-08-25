@@ -1,5 +1,6 @@
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import { useTranslation } from "react-i18next";
+import Recaptcha from "../Recaptcha/Recaptcha";
 
 interface FooterLink {
   text: string;
@@ -35,13 +36,7 @@ export default function Footer() {
         ))}
       </div>
       <LanguageDropdown />
-      <div className="captcha text-gray-500 text-sm">
-        {t("footer.recaptcha")}{" "}
-        <a href="#" className="underline text-blue-500 hover:text-blue-800">
-          {t("footer.learnMore")}
-        </a>
-        .
-      </div>
+      <Recaptcha />
     </div>
   );
 }

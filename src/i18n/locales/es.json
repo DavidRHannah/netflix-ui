@@ -37,6 +37,19 @@
     "country": "País",
     "boxOffice": "Taquilla"
   },
+  "signin": {
+    "header": "Iniciar sesión",
+    "emailPlaceholder": "Correo electrónico o número de teléfono",
+    "emailError": "Por favor, introduce un correo electrónico o número de móvil válido.",
+    "passwordPlaceholder": "Contraseña",
+    "submit": "Iniciar sesión",
+    "or": "O",
+    "useCode": "Usar un código de inicio de sesión",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "rememberMe": "Recuérdame",
+    "newToNetflix": "¿Nuevo en Netflix?",
+    "signupCta": "Suscríbete ahora."
+  },
   "reasons": {
     "title": "Más Razones para Unirte",
     "enjoyTv": {

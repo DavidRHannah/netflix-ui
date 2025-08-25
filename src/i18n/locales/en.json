@@ -37,6 +37,19 @@
     "country": "Country",
     "boxOffice": "Box Office"
   },
+  "signin": {
+    "header": "Sign In",
+    "emailPlaceholder": "Email or mobile number",
+    "emailError": "Please enter a valid email or mobile number.",
+    "passwordPlaceholder": "Password",
+    "submit": "Sign In",
+    "or": "OR",
+    "useCode": "Use a Sign-In Code",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+    "newToNetflix": "New to Netflix?",
+    "signupCta": "Sign up now."
+  },
   "reasons": {
     "title": "More Reasons to Join",
     "enjoyTv": {
