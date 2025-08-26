@@ -25,13 +25,6 @@ export interface User {
   };
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
-export interface AuthError {
-  message: string;
-  code: string;
-  field?: string;
-}
-
 interface AuthContextType {
   user: User | null;
   loading: boolean;
@@ -137,7 +130,7 @@ const mockApi = {
     return { user: mockUser, token, refreshToken };
   },
 
-  updateProfile: async (userId: string, updates: Partial<User>) => {
+  updateProfile: async (_userId: string, updates: Partial<User>) => {
     await new Promise((resolve) => setTimeout(resolve, 800));
 
     return { success: true, updates };
@@ -157,8 +150,7 @@ const mockApi = {
   },
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
-class AuthError extends Error {
+export class AuthError extends Error {
   constructor(
     message: string,
     public code: string,
