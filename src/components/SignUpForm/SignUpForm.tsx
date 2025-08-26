@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Visibility, VisibilityOff, Error } from "@mui/icons-material";
 import Recaptcha from "../Recaptcha/Recaptcha";
-import { Link } from '@tanstack/react-router';
+import { Link } from "@tanstack/react-router";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 export interface SignUpI {
   prefilledEmail: string;
 }
 
-export default function SignUpForm({prefilledEmail}: SignUpI) {
+export default function SignUpForm({ prefilledEmail }: SignUpI) {
   const { t } = useLanguage();
   const [email, setEmail] = useState(prefilledEmail || "");
   const [password, setPassword] = useState("");
@@ -23,14 +23,14 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
   const [nameError, setNameError] = useState("");
 
-  useEffect(()=>{
-    if (prefilledEmail === "")
-      return;
+  useEffect(() => {
+    if (prefilledEmail === "") return;
     if (!validateEmail(prefilledEmail))
-      setEmailError(t('signup.emailError') || "Please enter a valid email address.");
-    else
-      setEmailError("");
-  }, [prefilledEmail, t])
+      setEmailError(
+        t("signup.emailError") || "Please enter a valid email address.",
+      );
+    else setEmailError("");
+  }, [prefilledEmail, t]);
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -50,7 +50,9 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
     setEmail(value);
 
     if (value && !validateEmail(value)) {
-      setEmailError(t("signup.emailError") || "Please enter a valid email address.");
+      setEmailError(
+        t("signup.emailError") || "Please enter a valid email address.",
+      );
     } else {
       setEmailError("");
     }
@@ -61,24 +63,33 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
     setPassword(value);
 
     if (value && !validatePassword(value)) {
-      setPasswordError(t("signup.passwordError") || "Password must be at least 8 characters long.");
+      setPasswordError(
+        t("signup.passwordError") ||
+          "Password must be at least 8 characters long.",
+      );
     } else {
       setPasswordError("");
     }
 
     if (confirmPassword && value !== confirmPassword) {
-      setConfirmPasswordError(t("signup.confirmPasswordError") || "Passwords do not match.");
+      setConfirmPasswordError(
+        t("signup.confirmPasswordError") || "Passwords do not match.",
+      );
     } else if (confirmPassword) {
       setConfirmPasswordError("");
     }
   };
 
-  const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleConfirmPasswordChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+  ) => {
     const value = e.target.value;
     setConfirmPassword(value);
 
     if (value && value !== password) {
-      setConfirmPasswordError(t("signup.confirmPasswordError") || "Passwords do not match.");
+      setConfirmPasswordError(
+        t("signup.confirmPasswordError") || "Passwords do not match.",
+      );
     } else {
       setConfirmPasswordError("");
     }
@@ -104,17 +115,24 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
     let hasError = false;
 
     if (!validateEmail(email)) {
-      setEmailError(t("signup.emailError") || "Please enter a valid email address.");
+      setEmailError(
+        t("signup.emailError") || "Please enter a valid email address.",
+      );
       hasError = true;
     }
 
     if (!validatePassword(password)) {
-      setPasswordError(t("signup.passwordError") || "Password must be at least 8 characters long.");
+      setPasswordError(
+        t("signup.passwordError") ||
+          "Password must be at least 8 characters long.",
+      );
       hasError = true;
     }
 
     if (password !== confirmPassword) {
-      setConfirmPasswordError(t("signup.confirmPasswordError") || "Passwords do not match.");
+      setConfirmPasswordError(
+        t("signup.confirmPasswordError") || "Passwords do not match.",
+      );
       hasError = true;
     }
 
@@ -129,12 +147,12 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
 
     if (hasError) return;
 
-    console.log("Sign up attempt:", { 
-      email, 
-      password, 
-      firstName, 
-      lastName, 
-      agreeToTerms 
+    console.log("Sign up attempt:", {
+      email,
+      password,
+      firstName,
+      lastName,
+      agreeToTerms,
     });
   };
 
@@ -143,7 +161,7 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
       <h1 className="text-white text-3xl font-semibold mb-2">
         {t("signup.header") || "Sign Up"}
       </h1>
-      
+
       <div className="flex gap-3">
         <div className="flex-1">
           <input
@@ -210,11 +228,12 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
         >
-          {password !== "" && ((showPassword) ? (
-            <VisibilityOff className="text-xl" />
-          ) : (
-            <Visibility className="text-xl" />
-          ))}
+          {password !== "" &&
+            (showPassword ? (
+              <VisibilityOff className="text-xl" />
+            ) : (
+              <Visibility className="text-xl" />
+            ))}
         </button>
         {passwordError && (
           <div className="flex items-center mt-2 text-red-500 text-sm">
@@ -231,7 +250,9 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
           type={showConfirmPassword ? "text" : "password"}
           value={confirmPassword}
           onChange={handleConfirmPasswordChange}
-          placeholder={t("signup.confirmPasswordPlaceholder") || "Confirm password"}
+          placeholder={
+            t("signup.confirmPasswordPlaceholder") || "Confirm password"
+          }
           className={`w-full bg-gray-900/40 text-white placeholder-gray-400 p-4 pr-12 rounded border transition-colors
               ${confirmPassword ? (confirmPasswordError ? "border-red-500" : "border-green-500") : "border-gray-600"}
               focus:border-white focus:outline-none`}
@@ -241,11 +262,12 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
           onClick={() => setShowConfirmPassword(!showConfirmPassword)}
           className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
         >
-          {confirmPassword !== "" && ((showConfirmPassword) ? (
-            <VisibilityOff className="text-xl" />
-          ) : (
-            <Visibility className="text-xl" />
-          ))}
+          {confirmPassword !== "" &&
+            (showConfirmPassword ? (
+              <VisibilityOff className="text-xl" />
+            ) : (
+              <Visibility className="text-xl" />
+            ))}
         </button>
         {confirmPasswordError && (
           <div className="flex items-center mt-2 text-red-500 text-sm">
@@ -284,8 +306,8 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
         onClick={handleSubmit}
         disabled={!agreeToTerms}
         className={`w-full font-bold py-3 rounded transition-colors duration-200 ${
-          agreeToTerms 
-            ? "bg-red-600 hover:bg-red-700 hover:cursor-pointer text-white" 
+          agreeToTerms
+            ? "bg-red-600 hover:bg-red-700 hover:cursor-pointer text-white"
             : "bg-gray-600 cursor-not-allowed text-gray-400"
         }`}
       >
@@ -294,8 +316,8 @@ export default function SignUpForm({prefilledEmail}: SignUpI) {
 
       <div className="text-gray-400 text-sm text-center">
         {t("signup.alreadyHaveAccount") || "Already have an account?"}
-        <Link 
-          to='/signin' 
+        <Link
+          to="/signin"
           className="text-white hover:underline ml-1 font-medium"
         >
           {t("signup.signinCta") || "Sign in now."}

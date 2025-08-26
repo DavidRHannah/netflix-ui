@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Visibility, VisibilityOff, Error } from "@mui/icons-material";
 import Recaptcha from "../Recaptcha/Recaptcha";
-import { Link } from '@tanstack/react-router';
+import { Link } from "@tanstack/react-router";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function SignInForm() {
@@ -74,11 +74,12 @@ export default function SignInForm() {
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
         >
-          {password !== "" && ((showPassword) ? (
-            <VisibilityOff className="text-xl" />
-          ) : (
-            <Visibility className="text-xl" />
-          ))}
+          {password !== "" &&
+            (showPassword ? (
+              <VisibilityOff className="text-xl" />
+            ) : (
+              <Visibility className="text-xl" />
+            ))}
         </button>
       </div>
 
@@ -124,8 +125,8 @@ export default function SignInForm() {
 
       <div className="text-gray-400 text-sm">
         {t("signin.newToNetflix")}
-        <Link 
-          to='/signup' 
+        <Link
+          to="/signup"
           className="text-white hover:underline ml-1 font-medium"
         >
           {t("signin.signupCta")}

@@ -12,7 +12,7 @@ export default function CallToActionInput() {
     if (prefilledEmail.trim()) {
       navigate({
         to: "/signup",
-        search: { prefilledEmail: prefilledEmail.trim() }
+        search: { prefilledEmail: prefilledEmail.trim() },
       });
     } else {
       navigate({ to: "/signup" });
@@ -24,7 +24,7 @@ export default function CallToActionInput() {
       handleGetStarted();
     }
   };
-  
+
   return (
     <div className="flex flex-col text-center justify-center items-center text-white gap-4 mt-6">
       <div className="mt-2 font-medium lg:text-xl lg:max-w-xl gap-2 max-w-96 xl:max-w-2xl">
@@ -39,7 +39,7 @@ export default function CallToActionInput() {
           onKeyDown={handleKeyPress}
           type="email"
         />
-        <button 
+        <button
           className="get-started bg-red-600 hover:bg-red-700 duration-300 transition-colors cursor-pointer rounded-sm flex items-center gap-2 px-3 py-3"
           onClick={handleGetStarted}
         >
