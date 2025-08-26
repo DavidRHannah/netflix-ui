@@ -1,14 +1,19 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Navigate } from "@tanstack/react-router";
 import Footer from "../components/Footer/Footer";
 import BackgroundWrapper from "../components/BackgroundWrapper/BackgroundWrapper";
 import NavBar from "../components/NavBar/NavBar";
 import SignInForm from "../components/SignInForm/SignInForm";
+import { useAuth } from "../contexts/AuthContext";
 
 export const Route = createFileRoute("/signin")({
   component: SignIn,
 });
 
 function SignIn() {
+  const { isAuthenticated } = useAuth();
+
+  if (isAuthenticated) return <Navigate to={"/dashboard"} />;
+
   return (
     <div className="bg-black">
       <BackgroundWrapper className="flex flex-col">
