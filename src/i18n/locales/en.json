@@ -67,7 +67,8 @@
     "forgotPassword": "Forgot password?",
     "rememberMe": "Remember me",
     "newToNetflix": "New to Netflix?",
-    "signupCta": "Sign up now."
+    "signupCta": "Sign up now.",
+    "signingIn": "Signing in..."
   },
   "reasons": {
     "title": "More Reasons to Join",
