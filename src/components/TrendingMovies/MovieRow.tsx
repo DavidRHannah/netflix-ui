@@ -20,49 +20,51 @@ export default function MovieRow({
   const { selectedMovie, isModalOpen, openModal, closeModal } = useMovieModal();
 
   const getScrollAmount = useCallback(() => {
-    console.log(screenWidth)
-    if (screenWidth === 'xs') return 350;
-    if (screenWidth === 'sm') return 600;
-    if (screenWidth === 'md') return 600;
-    if (screenWidth === 'lg') return 1200;
-    if (screenWidth === 'xl') return 1400;
+    console.log(screenWidth);
+    if (screenWidth === "xs") return 350;
+    if (screenWidth === "sm") return 600;
+    if (screenWidth === "md") return 600;
+    if (screenWidth === "lg") return 1200;
+    if (screenWidth === "xl") return 1400;
     return 2400;
   }, [screenWidth]);
 
-  const renderMovieCard = useCallback((movie: Movie) => (
-    <div
-      onClick={() => openModal(movie)}
-      className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105"
-    >
-      {showTrendingRank && (
-        <div className="absolute -bottom-1 -left-1 text-white text-6xl drop-shadow-[0_3px_2px_rgba(255,0,0,1)] z-10 font-extrabold">
-          {movie.rank}
-        </div>
-      )}
-      <div className="relative overflow-hidden rounded-lg">
-        <img
-          src={`/movie_data/posters/${movie.localPoster}`}
-          alt={movie.title}
-          className="w-36 md:w-48 h-48 md:h-64 object-contain"
-        />
+  const renderMovieCard = useCallback(
+    (movie: Movie) => (
+      <div
+        onClick={() => openModal(movie)}
+        className="movie-card relative group cursor-pointer transition-transform duration-300 hover:scale-105"
+      >
+        {showTrendingRank && (
+          <div className="absolute -bottom-1 -left-1 text-white text-6xl drop-shadow-[0_3px_2px_rgba(255,0,0,1)] z-10 font-extrabold">
+            {movie.rank}
+          </div>
+        )}
+        <div className="relative overflow-hidden rounded-lg">
+          <img
+            src={`/movie_data/posters/${movie.localPoster}`}
+            alt={movie.title}
+            className="w-36 md:w-48 h-48 md:h-64 object-contain"
+          />
 
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-opacity duration-300 flex items-end">
-          <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col text-center justify-between w-full h-full">
-            <div className="top flex justify-center items-start mt-12">
-              <h3 className="font-semibold text-sm sm:text-base">
-                {movie.title}
-              </h3>
-            </div>
-            <div className="bottom w-full text-xs md:text-sm text-gray-300 font-medium text-right">
-              <p className="">{movie.genre}</p>
-              <p className="">{movie.year}</p>
-              <p className="text-yellow-400">★ {movie.imdbRating}</p>
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-opacity duration-300 flex items-end">
+            <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col text-center justify-between w-full h-full">
+              <div className="top flex justify-center items-start mt-12">
+                <h3 className="font-semibold text-sm sm:text-base">
+                  {movie.title}
+                </h3>
+              </div>
+              <div className="bottom w-full text-xs md:text-sm text-gray-300 font-medium text-right">
+                <p className="">{movie.genre}</p>
+                <p className="">{movie.year}</p>
+                <p className="text-yellow-400">★ {movie.imdbRating}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    ), [openModal, showTrendingRank]
+    ),
+    [openModal, showTrendingRank],
   );
 
   return (

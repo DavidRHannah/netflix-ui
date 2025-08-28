@@ -21,49 +21,55 @@ export default function Dashboard() {
   }, []);
 
   const getMoviesByGenre = (genreName: string) => {
-    return movies.filter(movie => 
-      movie.genre && movie.genre.some((g: string) => 
-        g.toLowerCase().includes(genreName.toLowerCase())
-      )
+    return movies.filter(
+      (movie) =>
+        movie.genre &&
+        movie.genre.some((g: string) =>
+          g.toLowerCase().includes(genreName.toLowerCase()),
+        ),
     );
   };
 
   const getMoviesByRating = (minRating: number) => {
-    return movies.filter(movie => 
-      movie.imdbRating && movie.imdbRating >= minRating
-    ).sort((a, b) => b.imdbRating - a.imdbRating);
+    return movies
+      .filter((movie) => movie.imdbRating && movie.imdbRating >= minRating)
+      .sort((a, b) => b.imdbRating - a.imdbRating);
   };
 
   const getMoviesByDecade = (startYear: number, endYear: number) => {
-    return movies.filter(movie => {
-      const year = movie.releaseYear;
-      return year >= startYear && year <= endYear;
-    }).sort((a, b) => b.releaseYear - a.releaseYear);
+    return movies
+      .filter((movie) => {
+        const year = movie.releaseYear;
+        return year >= startYear && year <= endYear;
+      })
+      .sort((a, b) => b.releaseYear - a.releaseYear);
   };
 
   const getRecentMovies = () => {
     const currentYear = new Date().getFullYear();
-    return movies.filter(movie => 
-      movie.releaseYear >= currentYear - 3
-    ).sort((a, b) => b.releaseYear - a.releaseYear);
+    return movies
+      .filter((movie) => movie.releaseYear >= currentYear - 3)
+      .sort((a, b) => b.releaseYear - a.releaseYear);
   };
 
   const getHighRatedMovies = () => {
-    return movies.filter(movie => movie.hasHighRating);
+    return movies.filter((movie) => movie.hasHighRating);
   };
 
   const getMoviesOnly = () => {
-    return movies.filter(movie => movie.isMovie);
+    return movies.filter((movie) => movie.isMovie);
   };
 
   const getSeriesOnly = () => {
-    return movies.filter(movie => movie.isSeries);
+    return movies.filter((movie) => movie.isSeries);
   };
 
   const getAwardWinners = () => {
-    return movies.filter(movie => 
-      movie.awards && movie.awards.toLowerCase().includes('won')
-    ).sort((a, b) => b.imdbRating - a.imdbRating);
+    return movies
+      .filter(
+        (movie) => movie.awards && movie.awards.toLowerCase().includes("won"),
+      )
+      .sort((a, b) => b.imdbRating - a.imdbRating);
   };
 
   const shuffleArray = (array: Movie[]) => {
@@ -78,7 +84,7 @@ export default function Dashboard() {
   if (loading) return <div className="text-white p-4">Loading...</div>;
 
   const heroMovie = movies[0];
-  
+
   // Create different movie categories
   const trendingNow = movies.slice(0, 10);
   const continueWatching = movies.slice(7, 10);
@@ -127,7 +133,8 @@ export default function Dashboard() {
                 </button>
               </div>
               <p className="mt-4 text-sm text-gray-300">
-                IMDb {heroMovie.imdbRating} | {heroMovie.releaseYear} • {heroMovie.runtime}
+                IMDb {heroMovie.imdbRating} | {heroMovie.releaseYear} •{" "}
+                {heroMovie.runtime}
               </p>
             </div>
           </div>
