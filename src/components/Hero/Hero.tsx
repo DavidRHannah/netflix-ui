@@ -6,7 +6,7 @@ import BackgroundWrapper from "../BackgroundWrapper/BackgroundWrapper";
 export default function Hero() {
   return (
     <BackgroundWrapper>
-      <NavBar showLanguageDropdown={false} showSignIn={true} />
+      <NavBar showLanguageDropdown={true} showSignIn={true} />
       <CallToAction />
       <Curve />
     </BackgroundWrapper>

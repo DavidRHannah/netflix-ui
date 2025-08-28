@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import { ArrowLeft, Camera, Save, Close } from "@mui/icons-material";
+import { ArrowLeft, CameraAlt, Save, Close } from "@mui/icons-material";
 import { Link } from "@tanstack/react-router";
 
 export default function ProfileSettings() {
@@ -61,7 +61,7 @@ export default function ProfileSettings() {
               </span>
             </div>
             <button className="absolute bottom-0 right-0 bg-gray-800 rounded-full p-2 hover:bg-gray-700 transition-colors">
-              <Camera className="text-base text-white" />
+              <CameraAlt className="text-base text-white" />
             </button>
           </div>
           <div>
@@ -234,7 +234,7 @@ export default function ProfileSettings() {
           </h3>
           <p className="text-gray-400 text-sm mb-4">
             It's a good idea to use a strong password that you don't use
-            elsewhere
+            elsewhere.
           </p>
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-medium transition-colors">
             Change Password
@@ -248,7 +248,7 @@ export default function ProfileSettings() {
                 Two-Factor Authentication
               </h3>
               <p className="text-gray-400 text-sm">
-                Add an extra layer of security to your account
+                Add an extra layer of security to your account.
               </p>
             </div>
             <button className="text-red-500 hover:text-red-400 text-sm font-medium">
@@ -269,7 +269,7 @@ export default function ProfileSettings() {
               <div>
                 <p className="text-white font-medium">Current Device</p>
                 <p className="text-gray-400 text-sm">
-                  Chrome on Windows • Active now
+                  Firefox on Windows • Active now
                 </p>
               </div>
               <span className="text-green-500 text-sm">Current</span>

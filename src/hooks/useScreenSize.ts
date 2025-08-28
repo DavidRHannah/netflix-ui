@@ -1,4 +1,3 @@
-// hooks/useScreenSize.ts
 import { useState, useEffect } from "react";
 
 type ScreenSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "";

@@ -12,7 +12,7 @@ interface ScrollCarouselProps<T> {
 }
 
 export default function ScrollCarousel<T>({
-  data,
+  data, 
   renderItem,
   className = "",
   itemClassName = "",

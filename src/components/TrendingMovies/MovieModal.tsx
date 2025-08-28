@@ -11,14 +11,24 @@ import {
 } from "@mui/icons-material";
 import type { Movie } from "./types";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate } from "@tanstack/react-router";
 
 interface MovieModalI {
   movie: Movie | null;
   isOpen: boolean;
   onClose: () => void;
+  showTrendingRank: boolean;
 }
 
-export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
+export default function MovieModal({
+  movie,
+  isOpen,
+  onClose,
+  showTrendingRank,
+}: MovieModalI) {
+  const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -42,6 +52,36 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
   const formatActors = (actors: string[]) => actors.slice(0, 5).join(", ");
   const formatDirectors = (directors: string[]) => directors.join(", ");
 
+  function handlePlayVideoClick(): void {
+    if (!isAuthenticated) {
+      navigate({
+        to: "/signup",
+      });
+    } else {
+      navigate({ to: "/dashboard" });
+    }
+  }
+
+  function handleAddToListClick(): void {
+    if (!isAuthenticated) {
+      navigate({
+        to: "/signup",
+      });
+    } else {
+      navigate({ to: "/dashboard" });
+    }
+  }
+
+  function handleSuggestMoreClick(): void {
+    if (!isAuthenticated) {
+      navigate({
+        to: "/signup",
+      });
+    } else {
+      navigate({ to: "/dashboard" });
+    }
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div
@@ -61,7 +101,7 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
         <div className="modal-hero relative">
           <div className="modal-background-img h-48 sm:h-64 md:h-80 overflow-hidden rounded-t-lg">
             <img
-              src={movie.localPoster}
+              src={`/movie_data/posters/${movie.localPoster}`}
               alt={movie.title}
               className="w-full h-full object-cover blur-sm scale-110"
             />
@@ -71,16 +111,18 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
             <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-6 w-full">
               <div className="poster flex-shrink-0">
                 <img
-                  src={movie.localPoster}
+                  src={`/movie_data/posters/${movie.localPoster}`}
                   alt={movie.title}
                   className="w-20 sm:w-32 md:w-48 rounded-lg shadow-2xl"
                 />
               </div>
 
               <div className="movie-info flex-1 text-white">
-                <div className="inline-flex items-center bg-red-600 text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2 sm:mb-3">
-                  #{movie.rank} {t("movieModal.trending")}
-                </div>
+                {showTrendingRank && (
+                  <div className="inline-flex items-center bg-red-600 text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2 sm:mb-3">
+                    #{movie.rank} {t("movieModal.trending")}
+                  </div>
+                )}
 
                 <h2 className="text-lg sm:text-2xl md:text-4xl font-bold mb-1 sm:mb-2 leading-tight">
                   {movie.title}
@@ -108,14 +150,23 @@ export default function MovieModal({ movie, isOpen, onClose }: MovieModalI) {
                 </div>
 
                 <div className="flex flex-wrap gap-2 sm:gap-3">
-                  <button className="bg-white text-black px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg flex items-center space-x-1 sm:space-x-2 hover:bg-gray-200 transition-colors font-semibold text-sm sm:text-base">
+                  <button
+                    className="play-video bg-white text-black px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg flex items-center space-x-1 sm:space-x-2 hover:bg-gray-200 transition-colors font-semibold text-sm sm:text-base"
+                    onClick={handlePlayVideoClick}
+                  >
                     <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>{t("movieModal.play")}</span>
                   </button>
-                  <button className="bg-zinc-700 hover:bg-zinc-600 text-white px-2 py-1.5 sm:px-4 sm:py-3 rounded-lg transition-colors">
+                  <button
+                    className="add-to-list bg-zinc-700 hover:bg-zinc-600 text-white px-2 py-1.5 sm:px-4 sm:py-3 rounded-lg transition-colors"
+                    onClick={handleAddToListClick}
+                  >
                     <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
-                  <button className="bg-zinc-700 hover:bg-zinc-600 text-white px-2 py-1.5 sm:px-4 sm:py-3 rounded-lg transition-colors">
+                  <button
+                    className="suggest-more bg-zinc-700 hover:bg-zinc-600 text-white px-2 py-1.5 sm:px-4 sm:py-3 rounded-lg transition-colors"
+                    onClick={handleSuggestMoreClick}
+                  >
                     <ThumbUp className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                 </div>

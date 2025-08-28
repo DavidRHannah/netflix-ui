@@ -67,7 +67,8 @@
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "rememberMe": "Recuérdame",
     "newToNetflix": "¿Nuevo en Netflix?",
-    "signupCta": "Suscríbete ahora."
+    "signupCta": "Suscríbete ahora.",
+    "signingIn": "Iniciando sesión..."
   },
   "reasons": {
     "title": "Más Razones para Unirte",
